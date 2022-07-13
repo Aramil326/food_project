@@ -1,4 +1,4 @@
-footer {
+footer>.container {
   padding: 100px 130px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -6,8 +6,8 @@ footer {
   justify-content: space-between;
 }
 
-footer>p {
-  width: 547px;
+footer>.container>p {
+  width: 25%;
   font-weight: 400;
   font-size: 19.2px;
   line-height: 130%;
@@ -51,4 +51,17 @@ footer>p {
 
 .footer_nav_active {
   color: #FB9333 !important;
+}
+
+
+
+
+@media only screen and (max-width : 1440px) {
+  footer>.container {
+    padding: 50px 50px;
+  }
+
+  footer>.container>p {
+    width: 250px;
+  }
 }

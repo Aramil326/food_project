@@ -1,4 +1,4 @@
-.container {
+header>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,4 +66,14 @@
   color: #FB9333;
   background: #FFFFFF;
   outline: 1px solid #FB9333;
+}
+
+
+
+
+
+@media only screen and (max-width : 1440px) {
+  header>.container {
+    padding: 50px 50px;
+  }
 }
