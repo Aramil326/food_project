@@ -1,78 +1,98 @@
-.analysis {
-  padding: 100px 130px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media only screen and (max-width : 1920px) {
+  .analysis {
+    padding: 100px 130px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .analysis_header {
+    margin-bottom: 140px;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #585858;
+  }
+
+  .analysis_content {
+    margin-bottom: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress-bar {
+    margin-right: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+
+    color: #585858;
+    background: inherit;
+    width: 300px;
+    height: 300px;
+    border: 20px solid #2DC747;
+    border-radius: 50%;
+  }
+
+  .checkpoints {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+
+    color: #585858;
+  }
+
+  .checkpoints>li {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkpoints>li:not(:last-child) {
+    margin-bottom: 43px;
+  }
+
+  .checkpoints>li:not(:last-child)::before {
+    content: url(../img/check.png);
+    margin-right: 17px;
+  }
+
+  .checkpoints>li:last-child::before {
+    content: url(../img/loading.png);
+    margin-right: 17px;
+  }
 }
 
-.analysis_header {
-  margin-bottom: 200px;
-  font-weight: 600;
-  font-size: 58px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #585858;
+@media only screen and (max-width : 1440px) {
+  .analysis {
+    padding: 50px;
+  }
+
+  .analysis_header {
+    margin-bottom: 132px;
+  }
 }
 
-.analysis_content {
-  margin-bottom: 191px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media only screen and (max-width : 1366px) {}
 
-.progress-bar {
-  margin-right: 130px;
+@media only screen and (max-width : 1024px) {}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (max-width : 768px) {}
 
-  font-weight: 600;
-  font-size: 58px;
-  line-height: 140%;
-  letter-spacing: -0.02em;
-
-  color: #585858;
-  background: inherit;
-  width: 300px;
-  height: 300px;
-  border: 20px solid #2DC747;
-  border-radius: 50%;
-}
-
-.checkpoints {
-  display: flex;
-  flex-direction: column;
-
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 140%;
-  letter-spacing: -0.02em;
-
-  color: #585858;
-}
-
-.checkpoints>li {
-  display: flex;
-  align-items: center;
-}
-
-.checkpoints>li:not(:last-child) {
-  margin-bottom: 43px;
-}
-
-.checkpoints>li:not(:last-child)::before {
-  content: url(../img/check.png);
-  margin-right: 17px;
-}
-
-.checkpoints>li:last-child::before {
-  content: url(../img/loading.png);
-  margin-right: 17px;
-}
+@media only screen and (max-width : 360px) {}

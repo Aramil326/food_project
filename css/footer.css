@@ -1,67 +1,82 @@
-footer>.container {
-  padding: 100px 130px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  display: flex;
-  justify-content: space-between;
+@media only screen and (max-width : 1920px) {
+  footer {
+    padding: 100px 130px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer>p {
+    width: 25%;
+    font-weight: 400;
+    font-size: 19.2px;
+    line-height: 130%;
+    color: #585858;
+  }
+
+  .footer_payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_payment>h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 19.2px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #585858;
+  }
+
+  .footer_payment_img {
+    display: flex;
+  }
+
+  .footer_payment_img:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer_nav>li>a {
+    font-weight: 500;
+    font-size: 19.2px;
+    line-height: 130%;
+    text-decoration: none;
+    color: #585858;
+  }
+
+  .footer_nav>li>a:hover {
+    color: #FB9333;
+  }
+
+  .footer_nav_active {
+    color: #FB9333 !important;
+  }
 }
-
-footer>.container>p {
-  width: 25%;
-  font-weight: 400;
-  font-size: 19.2px;
-  line-height: 130%;
-  color: #585858;
-}
-
-.footer_payment {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer_payment>h2 {
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 19.2px;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: #585858;
-}
-
-.footer_payment_img {
-  display: flex;
-}
-
-.footer_payment_img:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.footer_nav>li>a {
-  font-weight: 500;
-  font-size: 19.2px;
-  line-height: 130%;
-  text-decoration: none;
-  color: #585858;
-}
-
-.footer_nav>li>a:hover {
-  color: #FB9333;
-}
-
-.footer_nav_active {
-  color: #FB9333 !important;
-}
-
-
 
 
 @media only screen and (max-width : 1440px) {
-  footer>.container {
+  footer {
     padding: 50px 50px;
   }
 
-  footer>.container>p {
+  footer>p {
     width: 250px;
   }
 }
+
+@media only screen and (max-width : 1366px) {}
+
+@media only screen and (max-width : 1024px) {
+  .first-screen {
+    padding: 0 50px;
+  }
+}
+
+
+@media only screen and (max-width : 768px) {}
+
+
+
+@media only screen and (max-width : 360px) {}

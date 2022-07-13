@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
@@ -40,24 +40,19 @@
 
 <body>
   <header>
-    <div class="container">
-      <a href=""><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
-      <ul class="header_nav">
-        <li><a href="index.html" class="header_nav_active">Главная</a></li>
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="contact.html">Контакты</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="">Оферта</a></li>
-        <li><a href="">Тарифы</a></li>
-      </ul>
-      <a href="" class="header_contact-us">
-        Связаться с нами
-      </a>
-    </div>
+    <a href=""><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
+    <ul class="header_nav">
+      <li><a href="index.html" class="header_nav_active">Главная</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="">Оферта</a></li>
+      <li><a href="">Тарифы</a></li>
+    </ul>
+    <a href="" class="header_contact-us">
+      Связаться с нами
+    </a>
   </header>
-
-
-
 
   <section class="first-screen">
     <div class="first-screen_left">
@@ -89,7 +84,7 @@
     </div>
     <img src="img/header-girl.png" alt="Девушка с кето диеты" width="775px">
   </section>
-  <!-- 
+
   <section class="quiz_select-sex">
     <h1 class="quiz_select-sex_header">Выберите пол</h1>
     <ul class="quiz_select-sex_pagination">
@@ -105,7 +100,7 @@
     <div class="quiz_select-sex_card-box">
       <div class="quiz_select-sex_card-box_card">
         <h2 class="quiz_select-sex_title">Мужчина</h2>
-        <img src="img/quiz-man.png" alt="Мужчина" width="336px">
+        <img src="img/quiz-man.png" alt="Мужчина" width="50%">
         <img src="img/apple.png" alt="apple" width="116px" class="apple">
         <img src="img/cherry.png" alt="cherry" width="105px" class="cherry">
         <img src="img/mango.png" alt="mango" width="96px" class="mango">
@@ -113,7 +108,7 @@
       </div>
       <div class="quiz_select-sex_card-box_card">
         <h2 class="quiz_select-sex_title">Женщина</h2>
-        <img src="img/quiz-girl.png" alt="Женщина" width="233px">
+        <img src="img/quiz-girl.png" alt="Женщина" width="40%">
 
         <img src="img/pear.png" alt="pear" class="pear" width="112">
         <img src="img/kiwi.png" alt="kiwi" class="kiwi" width="97">
@@ -127,7 +122,8 @@
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions" style="display: none;">
+
+  <section class="quiz_questions">
     <h1 class="quiz_questions_header">Физическая активность</h1>
     <ul class="quiz_questions_pagination">
       <li class="active_pagination"></li>
@@ -140,35 +136,41 @@
       <li></li>
     </ul>
     <div class="quiz_questions_card-box">
-      <div class="card">
-        <img src="img/passive-lifestyle.png" alt="passive-lifestyle" width="283px">
-        <h3>Сидячий образ жизни</h3>
+      <div class="quiz_questions_card-box_wrap">
+        <div class="card">
+          <img src="img/passive-lifestyle.png" alt="passive-lifestyle">
+          <h3>Сидячий образ жизни</h3>
+        </div>
+        <div class="card">
+          <img src="img/often-walk.png" alt="often-walk">
+          <h3>Часто хожу пешком</h3>
+        </div>
+        <div class="card">
+          <img src="img/exercise-1-2-times-a-week.png" alt="exercise-1-2-times-a-week">
+          <h3>Занимаюсь спортом 1-2 раза в неделю</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/often-walk.png" alt="often-walk" width="215px">
-        <h3>Часто хожу пешком</h3>
+      <div class="quiz_questions_card-box_wrap">
+        <div class="card">
+          <img src="img/exercise-2-and-more-times-a-week.png" alt="exercise-2-and-more-times-a-week">
+          <h3>Занимаюсь спортом 2 и более раз в неделю</h3>
+        </div>
+        <div class="card">
+          <img src="img/professional-sportsman.png" alt="professional-sportsman">
+          <h3>Профессиональный
+            спортсмен</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/exercise-1-2-times-a-week.png" alt="exercise-1-2-times-a-week" width="272px">
-        <h3>Занимаюсь спортом 1-2 раза в неделю</h3>
-      </div>
-      <div class="card">
-        <img src="img/exercise-2-and-more-times-a-week.png" alt="exercise-2-and-more-times-a-week" width="141px">
-        <h3>Занимаюсь спортом 2 и более раз в неделю</h3>
-      </div>
-      <div class="card">
-        <img src="img/professional-sportsman.png" alt="professional-sportsman">
-        <h3>Профессиональный
-          спортсмен</h3>
-      </div>
+
     </div>
     <div class="buttons">
       <button class="previous">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat" style="display: none;">
-    <h1 class="quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
+
+  <section class="quiz_questions_meat">
+    <h1 class=" quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
     <ul class="quiz_questions_meat_pagination">
       <li class="active_pagination"></li>
       <li class="active_pagination"></li>
@@ -180,29 +182,33 @@
       <li></li>
     </ul>
     <div class="quiz_questions_meat_card-box">
-      <div class="card">
-        <img src="img/pig.png" alt="pig" width="161px">
-        <h3>Свинина</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/pig.png" alt="pig">
+          <h3>Свинина</h3>
+        </div>
+        <div class="card">
+          <img src="img/cow.png" alt="cow">
+          <h3>Говядина</h3>
+        </div>
+        <div class="card">
+          <img src="img/chicken.png" alt="chicken">
+          <h3>Курица</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/cow.png" alt="cow" width="171px">
-        <h3>Говядина</h3>
-      </div>
-      <div class="card">
-        <img src="img/chicken.png" alt="chicken" width="154px">
-        <h3>Курица</h3>
-      </div>
-      <div class="card">
-        <img src="img/chicken.png" alt="chicken" width="169px">
-        <h3>Баранина</h3>
-      </div>
-      <div class="card">
-        <img src="img/fish.png" alt="fish">
-        <h3>Рыба</h3>
-      </div>
-      <div class="card">
-        <img src="img/not.png" alt="not">
-        <h3>Не ем мясо</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/chicken.png" alt="chicken">
+          <h3>Баранина</h3>
+        </div>
+        <div class="card">
+          <img src="img/fish.png" alt="fish">
+          <h3>Рыба</h3>
+        </div>
+        <div class="card">
+          <img src="img/not.png" alt="not">
+          <h3>Не ем мясо</h3>
+        </div>
       </div>
     </div>
     <div class="buttons">
@@ -210,7 +216,7 @@
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat" style="display: none;">
+  <section class="quiz_questions_meat">
     <h1 class="quiz_questions_meat_header">Какие овощи предпочитаете?</h1>
     <ul class="quiz_questions_meat_pagination">
       <li class="active_pagination"></li>
@@ -223,37 +229,42 @@
       <li></li>
     </ul>
     <div class="quiz_questions_meat_card-box">
-      <div class="card">
-        <img src="img/cucumber.png" alt="cucumber" width="169px">
-        <h3>Огурцы</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/cucumber.png" alt="cucumber">
+          <h3>Огурцы</h3>
+        </div>
+        <div class="card">
+          <img src="img/broccoli.png" alt="broccoli">
+          <h3>Брокколи</h3>
+        </div>
+        <div class="card">
+          <img src="img/avocado.png" alt="avocado">
+          <h3>Авокадо</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/broccoli.png" alt="broccoli" width="170px">
-        <h3>Брокколи</h3>
-      </div>
-      <div class="card">
-        <img src="img/avocado.png" alt="avocado" width="154px">
-        <h3>Авокадо</h3>
-      </div>
-      <div class="card">
-        <img src="img/mushroom.png" alt="mushroom" width="169px">
-        <h3>Грибы</h3>
-      </div>
-      <div class="card">
-        <img src="img/eggplant.png" alt="eggplant">
-        <h3>Баклажаны</h3>
-      </div>
-      <div class="card">
-        <img src="img/not.png" alt="not">
-        <h3>Не ем овощи</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/mushroom.png" alt="mushroom">
+          <h3>Грибы</h3>
+        </div>
+        <div class="card">
+          <img src="img/eggplant.png" alt="eggplant">
+          <h3>Баклажаны</h3>
+        </div>
+        <div class="card">
+          <img src="img/not.png" alt="not">
+          <h3>Не ем овощи</h3>
+        </div>
       </div>
     </div>
+
     <div class="buttons">
       <button class="previous">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat" style="display: none;">
+  <section class="quiz_questions_meat">
     <h1 class="quiz_questions_meat_header">Что выберете из молочной продукции?</h1>
     <ul class="quiz_questions_meat_pagination">
       <li class="active_pagination"></li>
@@ -266,37 +277,42 @@
       <li></li>
     </ul>
     <div class="quiz_questions_meat_card-box">
-      <div class="card">
-        <img src="img/milk.png" alt="milk" width="102px">
-        <h3>Молоко</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/milk.png" alt="milk">
+          <h3>Молоко</h3>
+        </div>
+        <div class="card">
+          <img src="img/kefir.png" alt="kefir">
+          <h3>Кефир</h3>
+        </div>
+        <div class="card">
+          <img src="img/cheese.png" alt="cheese">
+          <h3>Сыр</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/kefir.png" alt="kefir" width="175px">
-        <h3>Кефир</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/butter.png" alt="butter">
+          <h3>Сливочное масло</h3>
+        </div>
+        <div class="card">
+          <img src="img/cream.png" alt="cream">
+          <h3>Йогурт</h3>
+        </div>
+        <div class="card">
+          <img src="img/not.png" alt="not">
+          <h3>Не употребляю молочную продукцию</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/cheese.png" alt="cheese" width="188px">
-        <h3>Сыр</h3>
-      </div>
-      <div class="card">
-        <img src="img/butter.png" alt="butter" width="169px">
-        <h3>Сливочное масло</h3>
-      </div>
-      <div class="card">
-        <img src="img/cream.png" alt="cream">
-        <h3>Йогурт</h3>
-      </div>
-      <div class="card">
-        <img src="img/not.png" alt="not">
-        <h3>Не употребляю молочную продукцию</h3>
-      </div>
+
     </div>
     <div class="buttons">
       <button class="previous">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat" style="display: none;">
+  <section class="quiz_questions_meat">
     <h1 class="quiz_questions_meat_header">Что еще предпочитаете?</h1>
     <ul class="quiz_questions_meat_pagination">
       <li class="active_pagination"></li>
@@ -309,37 +325,42 @@
       <li></li>
     </ul>
     <div class="quiz_questions_meat_card-box">
-      <div class="card">
-        <img src="img/apple_quiz.png" alt="apple_quiz" width="164px">
-        <h3>Яблоки</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/apple_quiz.png" alt="apple_quiz">
+          <h3>Яблоки</h3>
+        </div>
+        <div class="card">
+          <img src="img/berries.png" alt="berries">
+          <h3>Ягоды</h3>
+        </div>
+        <div class="card">
+          <img src="img/nuts.png" alt="nuts">
+          <h3>Орехи</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/berries.png" alt="berries" width="170px">
-        <h3>Ягоды</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/dried-fruits.png" alt="dried-fruits">
+          <h3>Сухофрукты</h3>
+        </div>
+        <div class="card">
+          <img src="img/porridge.png" alt="porridge">
+          <h3>Каши</h3>
+        </div>
+        <div class="card">
+          <img src="img/not.png" alt="not">
+          <h3>Ничего из перечисленного</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/nuts.png" alt="nuts" width="169px">
-        <h3>Орехи</h3>
-      </div>
-      <div class="card">
-        <img src="img/dried-fruits.png" alt="dried-fruits" width="164px">
-        <h3>Сухофрукты</h3>
-      </div>
-      <div class="card">
-        <img src="img/porridge.png" alt="porridge">
-        <h3>Каши</h3>
-      </div>
-      <div class="card">
-        <img src="img/not.png" alt="not">
-        <h3>Ничего из перечисленного</h3>
-      </div>
+
     </div>
     <div class="buttons">
       <button class="previous">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat" style="display: none;">
+  <section class="quiz_questions_meat">
     <h1 class="quiz_questions_meat_header">Вредные привычки</h1>
     <ul class="quiz_questions_meat_pagination">
       <li class="active_pagination"></li>
@@ -352,37 +373,43 @@
       <li></li>
     </ul>
     <div class="quiz_questions_meat_card-box">
-      <div class="card">
-        <img src="img/smoking.png" alt="smoking" width="200px">
-        <h3>Курю</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/smoking.png" alt="smoking">
+          <h3>Курю</h3>
+        </div>
+        <div class="card">
+          <img src="img/beer.png" alt="beer">
+          <h3>Часто выпиваю</h3>
+        </div>
+        <div class="card">
+          <img src="img/soda.png" alt="soda">
+          <h3>Пью много газировки</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/beer.png" alt="beer" width="161px">
-        <h3>Часто выпиваю</h3>
+      <div class="quiz_questions_meat_card-box_wrap">
+        <div class="card">
+          <img src="img/sleeping.png" alt="sleeping">
+          <h3>Плохо сплю</h3>
+        </div>
+        <div class="card">
+          <img src="img/salt.png" alt="salt">
+          <h3>Употребляю много соли</h3>
+        </div>
+        <div class="card">
+          <img src="img/not.png" alt="not">
+          <h3>Ничего из перечисленного</h3>
+        </div>
       </div>
-      <div class="card">
-        <img src="img/soda.png" alt="soda" width="129px">
-        <h3>Пью много газировки</h3>
-      </div>
-      <div class="card">
-        <img src="img/sleeping.png" alt="sleeping" width="178px">
-        <h3>Плохо сплю</h3>
-      </div>
-      <div class="card">
-        <img src="img/salt.png" alt="salt">
-        <h3>Употребляю много соли</h3>
-      </div>
-      <div class="card">
-        <img src="img/not.png" alt="not">
-        <h3>Ничего из перечисленного</h3>
-      </div>
+
     </div>
     <div class="buttons">
       <button class="previous">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="parametrs" style="display: none;">
+
+  <section class="parametrs">
     <h1 class="parametrs_header">Ваши параметры</h1>
     <ul class="parametrs_pagination">
       <li class="active_pagination"></li>
@@ -407,7 +434,8 @@
       <button class="next">Далее</button>
     </div>
   </section>
-  <section class="analysis" style="display: none;">
+
+  <section class="analysis">
     <h1 class="analysis_header">Происходит анализ ваших данных</h1>
     <div class="analysis_content">
       <div class="progress-bar">75%</div>
@@ -419,7 +447,7 @@
       </ul>
     </div>
   </section>
-  <section class="resume" style="display: none;">
+  <section class="resume">
     <h1 class="resume_header">Резюме вашего профиля</h1>
     <div class="resume_card-box">
       <div class="resume_card-box_card">
@@ -492,6 +520,7 @@
     </div>
 
   </section>
+
   <section class="reviews">
     <div class="reviews_content">
       <h1>Они уже <span style="color: #FB9333;">сделали это!</span></h1>
@@ -545,6 +574,7 @@
       </p>
     </div>
   </section>
+
   <section class="getting">
     <h1 class="getting_header">Что вы получаете?</h1>
     <div class="getting_card-box">
@@ -644,45 +674,9 @@
       </div>
     </div>
   </section>
-  -->
-  <footer>
-    <div class="container">
-      <img src="img/logo-2.png" alt="logo" width="204px" height="146px">
-      <p>© 2021. Keto-World.ru ООО «Правильное Питание»
-        ИНН: 7805784946, ОГРН: 1217800156386
-        198095, г. Санкт-Петербург, ул. Губина, д. 1/32 Литера А,
-        Помещение 3Н, Офис 22Б
-        support@keto-world.ru</p>
-      <div class="footer_payment">
-        <h2>Платеж защищен:</h2>
-        <div class="footer_payment_img">
-          <img src="img/https.png" alt="https://" width="82.5px">
-          <img src="img/ssl.png" alt="SSL" width="56.8px">
-          <img src="img/psi-dss.png" alt="PCIDSS" width="60.1px">
-          <img src="img/3D-secure.png" alt="3D SECURE" width="20px">
-        </div>
-        <h2>Принимаем к оплате</h2>
-        <div class="footer_payment_img">
-          <img src="img/visa.png" alt="visa" width="78.43px">
-          <img src="img/mastercard.png" alt="mastercard" width="39.2px">
-          <img src="img/mir.png" alt="mir" width="91.92px">
-        </div>
-      </div>
-      <ul class="footer_nav">
-        <li><a href="index.html" class="footer_nav_active">Главная</a></li>
-        <li><a href="about.html">О нас</a></li>
-        <li><a href="contact.html">Контакты</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="">Оферта</a></li>
-        <li><a href="">Тарифы</a></li>
-        <li><a href="subscriptions.html">Отменить подписку</a></li>
-        <li><a href="">Политика обработки данных</a></li>
-        <li><a href="">Политика конфиденциальности</a></li>
-      </ul>
-    </div>
-  </footer>
 
-  <!-- 
+
+
   <section class="plan">
     <div class="plan_left">
       <img src="img/plan_book.png" alt="book" width="430px">
@@ -741,7 +735,7 @@
         </div>
       </div>
     </div>
-    <div class="payment_popup" style="display: none;">
+    <div class="payment_popup">
       <div class="payment_popup_form">
         <h1>Индивидуальный план питания KETO-DAY</h1>
         <p class="payment_popup_form_price">49₽</p>
@@ -786,36 +780,40 @@
     </div>
   </section>
 
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-    let input_element = document.querySelector(".payment_right_input-contain input");
-
-    input_element.addEventListener("keyup", () => {
-      input_element.setAttribute("value", input_element.value);
-    })
-  </script>
+  <footer>
+    <img src="img/logo-2.png" alt="logo" width="204px" height="146px">
+    <p>© 2021. Keto-World.ru ООО «Правильное Питание»
+      ИНН: 7805784946, ОГРН: 1217800156386
+      198095, г. Санкт-Петербург, ул. Губина, д. 1/32 Литера А,
+      Помещение 3Н, Офис 22Б
+      support@keto-world.ru</p>
+    <div class="footer_payment">
+      <h2>Платеж защищен:</h2>
+      <div class="footer_payment_img">
+        <img src="img/https.png" alt="https://" width="82.5px">
+        <img src="img/ssl.png" alt="SSL" width="56.8px">
+        <img src="img/psi-dss.png" alt="PCIDSS" width="60.1px">
+        <img src="img/3D-secure.png" alt="3D SECURE" width="20px">
+      </div>
+      <h2>Принимаем к оплате</h2>
+      <div class="footer_payment_img">
+        <img src="img/visa.png" alt="visa" width="78.43px">
+        <img src="img/mastercard.png" alt="mastercard" width="39.2px">
+        <img src="img/mir.png" alt="mir" width="91.92px">
+      </div>
+    </div>
+    <ul class="footer_nav">
+      <li><a href="index.html" class="footer_nav_active">Главная</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="">Оферта</a></li>
+      <li><a href="">Тарифы</a></li>
+      <li><a href="subscriptions.html">Отменить подписку</a></li>
+      <li><a href="">Политика обработки данных</a></li>
+      <li><a href="">Политика конфиденциальности</a></li>
+    </ul>
+    </div>
 </body>
 
 </html>
