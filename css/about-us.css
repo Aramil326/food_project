@@ -1,0 +1,70 @@
+.about-us {
+  padding: 0 260px 100px 260px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+
+  background-image: url(../img/about-us_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us>h1 {
+  margin-bottom: 110px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(77px);
+  border-radius: 20px;
+
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #FFFFFF;
+}
+
+.about-us_content {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(77px);
+
+  border-radius: 20px;
+}
+
+.about-us_content>h2 {
+  margin-bottom: 40px;
+  width: 1060px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 140%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.about-us_content>P {
+  margin-bottom: 40px;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+
+  color: #FFFFFF;
+}

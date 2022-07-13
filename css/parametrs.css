@@ -1,0 +1,113 @@
+.parametrs {
+  padding: 100px 130px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parametrs_header {
+  margin-bottom: 45px;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #585858;
+}
+
+.parametrs_pagination {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.parametrs_pagination>li {
+  height: 2px;
+  min-width: 150px;
+  background-color: #FB9333;
+}
+
+.parametrs_pagination>li:hover {
+  cursor: pointer;
+}
+
+.active_pagination {
+  height: 15px !important;
+}
+
+.parametrs_pagination>li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.parametrs_form {
+  margin-bottom: 40px;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  background: #FEEAD2;
+  box-shadow: 0px 0px 4px #FB9333;
+  border-radius: 20px;
+}
+
+.parametrs_form_input {
+  /* width: 547px;
+  height: 100px; */
+  padding: 30px 60px 30px 115px;
+  border: 1px solid #575757;
+  border-radius: 220px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  -webkit-transition: all 0.3s ease;
+  ;
+  -moz-transition: all 0.3s ease;
+  ;
+  -o-transition: all 0.3s ease;
+  ;
+  transition: all 0.3s ease;
+  color: #575757;
+}
+
+.parametrs_form_input:focus {
+  outline: none !important;
+  border: 1px solid #FB9333;
+}
+
+.parametrs_form_input:nth-child(1) {
+  background: url(../img/calendar.png) no-repeat;
+  background-position: 30px;
+}
+
+.parametrs_form_input:nth-child(2) {
+  background: url(../img/bad-weight.png) no-repeat;
+  background-position: 30px;
+}
+
+.parametrs_form_input:nth-child(3) {
+  background: url(../img/growth.png) no-repeat;
+  background-position: 30px;
+}
+
+.parametrs_form_input:nth-child(4) {
+  background: url(../img/good-weight.png) no-repeat;
+  background-position: 30px;
+}
+
+.parametrs_form_input::placeholder {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #BCBCBC;
+}
+
+.parametrs_form_input:not(:last-child) {
+  margin-bottom: 36px;
+}

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+
+  <!-- Стили секций -->
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/first-screen.css">
+  <link rel="stylesheet" href="css/quiz_select-sex.css">
+  <link rel="stylesheet" href="css/quiz_questions.css">
+  <link rel="stylesheet" href="css/quiz_questions_meat.css">
+  <link rel="stylesheet" href="css/parametrs.css">
+  <link rel="stylesheet" href="css/analysis.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/getting.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/plan.css">
+  <link rel="stylesheet" href="css/payment.css">
+
+
+
+
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>KETO-DAY</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href=""><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
+      <ul class="header_nav">
+        <li><a href="index.html" class="header_nav_active">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="">Оферта</a></li>
+        <li><a href="">Тарифы</a></li>
+      </ul>
+      <a href="" class="header_contact-us">
+        Связаться с нами
+      </a>
+    </div>
+  </header>
+
+
+
+
+  <section class="first-screen">
+    <div class="first-screen_left">
+      <h1 class="first-screen_left_header">
+        Получите свой план <span>кето диеты</span>
+      </h1>
+      <div class="first-screen_left_items-box">
+        <div class="first-screen_left_items-box_item">
+          <h2 class="first-screen_left_items-box_item_title">5.000+</h2>
+          <p class="first-screen_left_items-box_item_subtitle">Сделали это</p>
+        </div>
+        <div class="first-screen_left_items-box_item">
+          <h2 class="first-screen_left_items-box_item_title">8.000+</h2>
+          <p class="first-screen_left_items-box_item_subtitle">Уже с нами</p>
+        </div>
+        <div class="first-screen_left_items-box_item">
+          <h2 class="first-screen_left_items-box_item_title">1.000+</h2>
+          <p class="first-screen_left_items-box_item_subtitle">Рейтинг</p>
+        </div>
+      </div>
+      <p class="first-screen_left_text">
+        Ответьте на 8 простых вопросов, и мы рассчитаем
+        ваш индивидуальный план питания
+      </p>
+      <div class="first-screen_left_button_div">
+        <a href="" class="first-screen_left_button">Получить за 49₽!</a>
+        <img src="img/arrow.png" alt="Стрелка" width="200px">
+      </div>
+    </div>
+    <img src="img/header-girl.png" alt="Девушка с кето диеты" width="775px">
+  </section>
+  <!-- 
+  <section class="quiz_select-sex">
+    <h1 class="quiz_select-sex_header">Выберите пол</h1>
+    <ul class="quiz_select-sex_pagination">
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_select-sex_card-box">
+      <div class="quiz_select-sex_card-box_card">
+        <h2 class="quiz_select-sex_title">Мужчина</h2>
+        <img src="img/quiz-man.png" alt="Мужчина" width="336px">
+        <img src="img/apple.png" alt="apple" width="116px" class="apple">
+        <img src="img/cherry.png" alt="cherry" width="105px" class="cherry">
+        <img src="img/mango.png" alt="mango" width="96px" class="mango">
+        <img src="img/grape.png" alt="grape" width="122px" class="grape">
+      </div>
+      <div class="quiz_select-sex_card-box_card">
+        <h2 class="quiz_select-sex_title">Женщина</h2>
+        <img src="img/quiz-girl.png" alt="Женщина" width="233px">
+
+        <img src="img/pear.png" alt="pear" class="pear" width="112">
+        <img src="img/kiwi.png" alt="kiwi" class="kiwi" width="97">
+        <img src="img/lemon.png" alt="lemon" class="lemon" width="93">
+        <img src="img/berry.png" alt="berry" class="berry" width="59">
+
+      </div>
+    </div>
+    <div class="bittons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions" style="display: none;">
+    <h1 class="quiz_questions_header">Физическая активность</h1>
+    <ul class="quiz_questions_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_card-box">
+      <div class="card">
+        <img src="img/passive-lifestyle.png" alt="passive-lifestyle" width="283px">
+        <h3>Сидячий образ жизни</h3>
+      </div>
+      <div class="card">
+        <img src="img/often-walk.png" alt="often-walk" width="215px">
+        <h3>Часто хожу пешком</h3>
+      </div>
+      <div class="card">
+        <img src="img/exercise-1-2-times-a-week.png" alt="exercise-1-2-times-a-week" width="272px">
+        <h3>Занимаюсь спортом 1-2 раза в неделю</h3>
+      </div>
+      <div class="card">
+        <img src="img/exercise-2-and-more-times-a-week.png" alt="exercise-2-and-more-times-a-week" width="141px">
+        <h3>Занимаюсь спортом 2 и более раз в неделю</h3>
+      </div>
+      <div class="card">
+        <img src="img/professional-sportsman.png" alt="professional-sportsman">
+        <h3>Профессиональный
+          спортсмен</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions_meat" style="display: none;">
+    <h1 class="quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
+    <ul class="quiz_questions_meat_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_meat_card-box">
+      <div class="card">
+        <img src="img/pig.png" alt="pig" width="161px">
+        <h3>Свинина</h3>
+      </div>
+      <div class="card">
+        <img src="img/cow.png" alt="cow" width="171px">
+        <h3>Говядина</h3>
+      </div>
+      <div class="card">
+        <img src="img/chicken.png" alt="chicken" width="154px">
+        <h3>Курица</h3>
+      </div>
+      <div class="card">
+        <img src="img/chicken.png" alt="chicken" width="169px">
+        <h3>Баранина</h3>
+      </div>
+      <div class="card">
+        <img src="img/fish.png" alt="fish">
+        <h3>Рыба</h3>
+      </div>
+      <div class="card">
+        <img src="img/not.png" alt="not">
+        <h3>Не ем мясо</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions_meat" style="display: none;">
+    <h1 class="quiz_questions_meat_header">Какие овощи предпочитаете?</h1>
+    <ul class="quiz_questions_meat_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_meat_card-box">
+      <div class="card">
+        <img src="img/cucumber.png" alt="cucumber" width="169px">
+        <h3>Огурцы</h3>
+      </div>
+      <div class="card">
+        <img src="img/broccoli.png" alt="broccoli" width="170px">
+        <h3>Брокколи</h3>
+      </div>
+      <div class="card">
+        <img src="img/avocado.png" alt="avocado" width="154px">
+        <h3>Авокадо</h3>
+      </div>
+      <div class="card">
+        <img src="img/mushroom.png" alt="mushroom" width="169px">
+        <h3>Грибы</h3>
+      </div>
+      <div class="card">
+        <img src="img/eggplant.png" alt="eggplant">
+        <h3>Баклажаны</h3>
+      </div>
+      <div class="card">
+        <img src="img/not.png" alt="not">
+        <h3>Не ем овощи</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions_meat" style="display: none;">
+    <h1 class="quiz_questions_meat_header">Что выберете из молочной продукции?</h1>
+    <ul class="quiz_questions_meat_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_meat_card-box">
+      <div class="card">
+        <img src="img/milk.png" alt="milk" width="102px">
+        <h3>Молоко</h3>
+      </div>
+      <div class="card">
+        <img src="img/kefir.png" alt="kefir" width="175px">
+        <h3>Кефир</h3>
+      </div>
+      <div class="card">
+        <img src="img/cheese.png" alt="cheese" width="188px">
+        <h3>Сыр</h3>
+      </div>
+      <div class="card">
+        <img src="img/butter.png" alt="butter" width="169px">
+        <h3>Сливочное масло</h3>
+      </div>
+      <div class="card">
+        <img src="img/cream.png" alt="cream">
+        <h3>Йогурт</h3>
+      </div>
+      <div class="card">
+        <img src="img/not.png" alt="not">
+        <h3>Не употребляю молочную продукцию</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions_meat" style="display: none;">
+    <h1 class="quiz_questions_meat_header">Что еще предпочитаете?</h1>
+    <ul class="quiz_questions_meat_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_meat_card-box">
+      <div class="card">
+        <img src="img/apple_quiz.png" alt="apple_quiz" width="164px">
+        <h3>Яблоки</h3>
+      </div>
+      <div class="card">
+        <img src="img/berries.png" alt="berries" width="170px">
+        <h3>Ягоды</h3>
+      </div>
+      <div class="card">
+        <img src="img/nuts.png" alt="nuts" width="169px">
+        <h3>Орехи</h3>
+      </div>
+      <div class="card">
+        <img src="img/dried-fruits.png" alt="dried-fruits" width="164px">
+        <h3>Сухофрукты</h3>
+      </div>
+      <div class="card">
+        <img src="img/porridge.png" alt="porridge">
+        <h3>Каши</h3>
+      </div>
+      <div class="card">
+        <img src="img/not.png" alt="not">
+        <h3>Ничего из перечисленного</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="quiz_questions_meat" style="display: none;">
+    <h1 class="quiz_questions_meat_header">Вредные привычки</h1>
+    <ul class="quiz_questions_meat_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li></li>
+    </ul>
+    <div class="quiz_questions_meat_card-box">
+      <div class="card">
+        <img src="img/smoking.png" alt="smoking" width="200px">
+        <h3>Курю</h3>
+      </div>
+      <div class="card">
+        <img src="img/beer.png" alt="beer" width="161px">
+        <h3>Часто выпиваю</h3>
+      </div>
+      <div class="card">
+        <img src="img/soda.png" alt="soda" width="129px">
+        <h3>Пью много газировки</h3>
+      </div>
+      <div class="card">
+        <img src="img/sleeping.png" alt="sleeping" width="178px">
+        <h3>Плохо сплю</h3>
+      </div>
+      <div class="card">
+        <img src="img/salt.png" alt="salt">
+        <h3>Употребляю много соли</h3>
+      </div>
+      <div class="card">
+        <img src="img/not.png" alt="not">
+        <h3>Ничего из перечисленного</h3>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="parametrs" style="display: none;">
+    <h1 class="parametrs_header">Ваши параметры</h1>
+    <ul class="parametrs_pagination">
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+      <li class="active_pagination"></li>
+    </ul>
+
+    <form class="parametrs_form" action="">
+      <input class="parametrs_form_input" type="text" placeholder="Ваш возраст">
+      <input class="parametrs_form_input" type="text" placeholder="Ваш текущий вес">
+      <input class="parametrs_form_input" type="text" placeholder="Ваш текущий рост">
+      <input class="parametrs_form_input" type="text" placeholder="Желаемый вес">
+    </form>
+
+    <div class="buttons">
+      <button class="previous">Назад</button>
+      <button class="next">Далее</button>
+    </div>
+  </section>
+  <section class="analysis" style="display: none;">
+    <h1 class="analysis_header">Происходит анализ ваших данных</h1>
+    <div class="analysis_content">
+      <div class="progress-bar">75%</div>
+      <ul class="checkpoints">
+        <li>Подсчитываем профиль питания</li>
+        <li>Рассчитываем количество еды</li>
+        <li>Выбираем подходящие рецепты</li>
+        <li>Составляем план питания</li>
+      </ul>
+    </div>
+  </section>
+  <section class="resume" style="display: none;">
+    <h1 class="resume_header">Резюме вашего профиля</h1>
+    <div class="resume_card-box">
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Ваш ИМТ</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <p class="resume_card-box_card_title">31,12</p>
+        <img style="display:none;" src="img/scale-1.png" alt="scale" width="211px">
+        <img style="display:none;" src="img/scale-2.png" alt="scale" width="211px">
+        <img style="display:none;" src="img/scale-3.png" alt="scale" width="211px">
+        <img style="display:none;" src="img/scale-4.png" alt="scale" width="211px">
+        <img src="img/scale-5.png" alt="scale" width="211px">
+        <p class="resume_card-box_card_subtitle">Ожирение</p>
+      </div>
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Метаболический возраст</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <img src="img/resume-girls-1.png" alt="girl" class="resume_card-box_card_girl-boy" width="305px">
+        <img style="display:none;" src="img/resume-girls-2.png" alt="girl" class="resume_card-box_card_girl-boy"
+          width="305px">
+        <img style="display:none;" src="img/resume-girls-3.png" alt="girl" class="resume_card-box_card_girl-boy"
+          width="305px">
+        <img style="display:none;" src="img/resume-boys-1.png" alt="boy" class="resume_card-box_card_girl-boy"
+          width="305px">
+        <img style="display:none;" src="img/resume-boys-2.png" alt="boy" class="resume_card-box_card_girl-boy"
+          width="305px">
+        <img style="display:none;" src="img/resume-boys-3.png" alt="boy" class="resume_card-box_card_girl-boy"
+          width="305px">
+
+        <p class="resume_card-box_card_subtitle">35 лет</p>
+      </div>
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Рекомендуемое количество калорий</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <img src="img/resume_pie-chart.png" alt="scale" width="136px" class="resume_card-box_card_pie-chart">
+        <p class="resume_card-box_card_subtitle">1372-1472</p>
+      </div>
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Похудение в зонах</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <img src="img/resume_zones.png" alt="zones" class="resume_card-box_card_resume_zones" width="273px">
+      </div>
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Рекомендуемое количество воды</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <img src="img/resume_water.png" alt="scale" width="113px" class="resume_card-box_card_water">
+        <p class="resume_card-box_card_subtitle">2.3 Л</p>
+      </div>
+      <div class="resume_card-box_card">
+        <div class="resume_card-box_card_header">
+          <h3>Кетогенная диета</h3>
+          <img src="img/more.png" alt="more" width="25px">
+        </div>
+        <img src="img/KBJU.png" alt="zones" class="resume_card-box_card_KBJU" width="344px">
+      </div>
+    </div>
+    <div class="resume_wrapper">
+      <img style="transform: rotate(180deg);" src="img/arrow.png" alt="Стрелка" width="200px">
+      <a href="" class="resume_button">Получить прямо сейчас за 49₽</a>
+      <img src="img/arrow.png" alt="Стрелка" width="200px">
+    </div>
+
+  </section>
+  <section class="reviews">
+    <div class="reviews_content">
+      <h1>Они уже <span style="color: #FB9333;">сделали это!</span></h1>
+      <p>И явно не собираются останавливаться на достигнутом.</p>
+      <p>Следуйте их примеру.</p>
+      <p style="color: #FB9333; font-weight: 700;">Следуйте мечте!</p>
+      <div class="reviews_content_slides">
+        <div style="color: #585858;" class="reviews_content_slide">02</div>
+        <div class="reviews_content_slide">/05</div>
+      </div>
+      <div class="reviews_content_control">
+        <button class="reviews_content_control_prev">
+          <img src="img/previous.png" alt="prev" width="25px">
+        </button>
+        <button class="reviews_content_control_next">
+          <img src="img/next.png" alt="next" width="25px">
+        </button>
+      </div>
+    </div>
+    <div class="reviews_card">
+      <img src="img/review-1.png" alt="person" width="324px">
+      <h2>Дарья</h2>
+      <h3>24 года</h3>
+      <p>Питание KETO-WORLD работает на 100%! Радует то, что такой эффект я получила за довольно небольшие сроки.
+        Похудела на 18 кг. талия стала тоньше на 15 см. Кроме этого стала чувствовать телесную легкость, стала больше
+        двигаться. Теперь легче и спокойнее справляюсь со стрессами и без «заедания». Улучшилось настроение,
+        добавилась уверенность в себе. Научилась правильно подбирать продукты, это вошло в привычку! Кето диета творит
+        чудеса, рекомендую всем попробовать это на себе, точно не пожалеете, главное следовать предложенному плану.
+      </p>
+    </div>
+    <div class="reviews_card">
+      <img src="img/review-1.png" alt="person" width="324px">
+      <h2>Дарья</h2>
+      <h3>24 года</h3>
+      <p>Питание KETO-WORLD работает на 100%! Радует то, что такой эффект я получила за довольно небольшие сроки.
+        Похудела на 18 кг. талия стала тоньше на 15 см. Кроме этого стала чувствовать телесную легкость, стала больше
+        двигаться. Теперь легче и спокойнее справляюсь со стрессами и без «заедания». Улучшилось настроение,
+        добавилась уверенность в себе. Научилась правильно подбирать продукты, это вошло в привычку! Кето диета творит
+        чудеса, рекомендую всем попробовать это на себе, точно не пожалеете, главное следовать предложенному плану.
+      </p>
+    </div>
+    <div class="reviews_card" style="display: none;">
+      <img src="img/review-1.png" alt="person" width="324px">
+      <h2>Дарья</h2>
+      <h3>24 года</h3>
+      <p>Питание KETO-WORLD работает на 100%! Радует то, что такой эффект я получила за довольно небольшие сроки.
+        Похудела на 18 кг. талия стала тоньше на 15 см. Кроме этого стала чувствовать телесную легкость, стала больше
+        двигаться. Теперь легче и спокойнее справляюсь со стрессами и без «заедания». Улучшилось настроение,
+        добавилась уверенность в себе. Научилась правильно подбирать продукты, это вошло в привычку! Кето диета творит
+        чудеса, рекомендую всем попробовать это на себе, точно не пожалеете, главное следовать предложенному плану.
+      </p>
+    </div>
+  </section>
+  <section class="getting">
+    <h1 class="getting_header">Что вы получаете?</h1>
+    <div class="getting_card-box">
+      <div class="getting_card-box_left">
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_calendar.png" alt="calendar" width="90px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Индивидуальный план питания на 28 дней</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_comfortable.png" alt="comfortable" width="101px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Комфортно и вкусно</h2>
+            <p>Никакого голода! Вы будете чувствовать себя комфортно, а разнообразие блюд удивит даже гурмана</p>
+          </div>
+        </div>
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_multiplicity.png" alt="multiplicity" width="102px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Широкое разнообразие</h2>
+            <p>Выбирайте то, что вам по душе: мы объединили в меню мясные, рыбные и вегетарианские блюда</p>
+          </div>
+        </div>
+      </div>
+      <div class="getting_card-box_right">
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_diagram.png" alt="diagram" width="102px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Полный расчет КБЖУ специально под ваши нужды</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_chief.png" alt="chief" width="64px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Быстро и просто</h2>
+            <p>Подробное описание блюд от шеф-повара помогут разобраться с приготовлением</p>
+          </div>
+        </div>
+        <div class="getting_card">
+          <div class="getting_card_left">
+            <img src="img/getting_tray.png" alt="tray" width="105px">
+          </div>
+          <div class="getting_card_right">
+            <h2>Всегда есть новые блюда</h2>
+            <p>Блюда не повторяются, а значит меню не сможет надоесть, что повышает шансы не бросить диету</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="getting_gallery">
+      <div class="getting_gallery_item">
+        <div class="getting_gallery_item_left">
+          <img src="img/getting_gallery-1.png" alt="person" width="805">
+        </div>
+        <div class="getting_gallery_item_right">
+          <h2>Индивидуальный план питания</h2>
+          <p>Вы получаете доступ к уникальной и удобной для использования информации, в которой находятся разнообразные
+            планы питания на каждый день. Подробные описания пригтовления вкуснейших блюд от команды шеф-повара и
+            нутрициолога помогут вам быстро и просто разобраться с готовкой! Выбирайте сами на сколько порций готовить
+            блюдо. Довольны будете и вы, и ваша семья!</p>
+        </div>
+      </div>
+
+      <div class="getting_gallery_item">
+        <div class="getting_gallery_item_right">
+          <h2>Более 1000 рецептов</h2>
+          <p>Более 1000 рецептов полезных блюд, которые помогут вас прийти к желаемому результату быстро и без вреда для
+            здоровья. В нашем меню не только завтраки, обеды и ужины, но и десерты, закуски и напитки. Все блюда
+            сбалансорованы с учетом КБЖУ под несколько разных рационов - с мясом, с рыбой и вегетарианский.</p>
+        </div>
+        <div class="getting_gallery_item_left" style="padding: 0 0 0 50px">
+          <img src="img/getting_gallery-2.png" alt="person" width="805">
+        </div>
+      </div>
+      <div class="getting_gallery_item">
+        <div class="getting_gallery_item_left">
+          <img src="img/getting_gallery-3.png" alt="person" width="805">
+        </div>
+        <div class="getting_gallery_item_right">
+          <h2>Онлайн поддержка</h2>
+          <p>Мы на связи 24/7. Готовы ответить на любые ваши вопросы и решить любые проблемы. Наши специалисты отдела
+            поддержки помогут разобраться со всеми вопросами, которые у вас возникнут.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <img src="img/logo-2.png" alt="logo" width="204px" height="146px">
+    <p>© 2021. Keto-World.ru ООО «Правильное Питание»
+      ИНН: 7805784946, ОГРН: 1217800156386
+      198095, г. Санкт-Петербург, ул. Губина, д. 1/32 Литера А,
+      Помещение 3Н, Офис 22Б
+      support@keto-world.ru</p>
+    <div class="footer_payment">
+      <h2>Платеж защищен:</h2>
+      <div class="footer_payment_img">
+        <img src="img/https.png" alt="https://" width="82.5px">
+        <img src="img/ssl.png" alt="SSL" width="56.8px">
+        <img src="img/psi-dss.png" alt="PCIDSS" width="60.1px">
+        <img src="img/3D-secure.png" alt="3D SECURE" width="20px">
+      </div>
+      <h2>Принимаем к оплате</h2>
+      <div class="footer_payment_img">
+        <img src="img/visa.png" alt="visa" width="78.43px">
+        <img src="img/mastercard.png" alt="mastercard" width="39.2px">
+        <img src="img/mir.png" alt="mir" width="91.92px">
+      </div>
+    </div>
+    <ul class="footer_nav">
+      <li><a href="index.html" class="footer_nav_active">Главная</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="">Оферта</a></li>
+      <li><a href="">Тарифы</a></li>
+      <li><a href="subscriptions.html">Отменить подписку</a></li>
+      <li><a href="">Политика обработки данных</a></li>
+      <li><a href="">Политика конфиденциальности</a></li>
+    </ul>
+  </footer>
+  <section class="plan">
+    <div class="plan_left">
+      <img src="img/plan_book.png" alt="book" width="430px">
+    </div>
+    <div class="plan_right">
+      <h2>Персональный план питания готов!</h2>
+      <p>План питания на первую неделю со скидкой обойдется вам в 49₽!</p>
+      <a href="" class="plan_button">Получить прямо сейчас за 49₽</a>
+    </div>
+  </section>
+
+  <section class="payment">
+    <div class="payment_left">
+      <h2>Оформление заказа</h2>
+      <a href=""><img src="img/payment_arrow.png" alt="Вернуться на сайт" width="94px">Вернуться на сайт</a>
+      <div class="payment_left_wrap">
+        <img src="img/plan_book.png" alt="book" width="430px">
+        <div class="payment_left_wrap_content">
+          <h3>Индивидуальный план питания KETO-DAY</h3>
+          <p>Ваш персональный план питания ждет вас! Успейте приобрести доступ к личному кабинету со
+            <span>скидкой!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="payment_right">
+      <h2>До завершения акции осталось:</h2>
+      <div class="payment_right_clock">
+        <div class="payment_right_clock_min">14</div>
+        <div class="payment_right_clock_colon">:</div>
+        <div class="payment_right_clock_sec">01</div>
+      </div>
+      <div class="payment_right_price">
+        <p>899₽</p>
+        <p>49₽</p>
+        <p>с учетом скидки</p>
+      </div>
+      <div class="payment_right_input-contain">
+        <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+        <label class="payment_right_placeholder-text" for="fname" id="placeholder-fname">
+          <div class="payment_right_text">E-mail</div>
+        </label>
+      </div>
+      <button class="payment_right_button">Получить план за 49₽</button>
+      <div class="payment_right_agree">
+        <div class="checkbox">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <p>Направляя адрес электронной почты и нажимая кнопку «Оплатить и получить план за 49₽» я ознакомился и
+              безоговорочно соглашаюсь с <a href="https://">публичной офертой</a>, с <a href="https://">тарифами</a>, с
+              <a href="https://">политикой
+                конфиденциальности</a> и даю <a href="https://">согласие</a> на
+              обработку своих персональных данных.
+            </p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="payment_popup" style="display: none;">
+      <div class="payment_popup_form">
+        <h1>Индивидуальный план питания KETO-DAY</h1>
+        <p class="payment_popup_form_price">49₽</p>
+        <p class="payment_popup_form_card-number">
+          Номер карты
+        </p>
+        <input type="text" class="payment_popup_form_card-number_input" placeholder="От 16 до 19 цифр">
+        <div class="payment_popup_form_wrap">
+          <div class="payment_popup_form_wrap_validity-period">
+            <p>Срок действия</p>
+            <input type="text" class="payment_popup_form_wrap_input" placeholder="ММ/ГГ">
+          </div>
+          <div class="payment_popup_form_wrap_cv">
+            <p>CV код</p>
+            <input type="text" class="payment_popup_form_wrap_input_cv" placeholder="***">
+          </div>
+        </div>
+        <div class="payment_popup_form_checkbox">
+          <input type="checkbox" id="form">
+          <label for="form">
+            <p>Отправить квитанцию на E-mail</p>
+          </label>
+        </div>
+        <p>E-mail</p>
+        <input type="text" class="payment_popup_form_card-number_input" placeholder="ivanov_ivan@mail.ru">
+
+        <button class="payment_popup_form_button">
+          Подтвердить оплату
+        </button>
+
+        <div class="payment_popup_form_secure-connection">
+          <div class="payment_popup_form_secure-connection_https">
+            <img src="img/secure-connection_https.png" alt="HTTPS" width="17px">
+            <p>HTTPS/SSL</p>
+          </div>
+          <p>Защищённое соединение</p>
+        </div>
+
+        <img src="img/secured-by.png" alt="secured-by" width="431px">
+        <img class="payment_popup_form_close" src="/img/close.png" alt="close" width="30px">
+      </div>
+    </div>
+  </section>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    let input_element = document.querySelector(".payment_right_input-contain input");
+
+    input_element.addEventListener("keyup", () => {
+      input_element.setAttribute("value", input_element.value);
+    })
+  </script>
+</body>
+
+</html>
