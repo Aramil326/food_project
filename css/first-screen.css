@@ -107,10 +107,47 @@
   .first-screen {
     padding: 0 50px;
   }
-
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .first-screen>img {
+    width: 40%;
+  }
+
+  .first-screen_left_header {
+    margin-bottom: 5%;
+    font-size: calc(14px + 55 * (100vw / 1920));
+  }
+
+  .first-screen_left_items-box_item:not(:last-child) {
+    margin-right: 5%;
+  }
+
+  .first-screen_left_items-box_item_title {
+    font-size: calc(14px + 55 * (100vw / 1920));
+    font-size: 28px;
+  }
+
+  .first-screen_left_items-box_item_subtitle {
+    font-size: calc(14px + 5 * (100vw / 1920));
+
+  }
+
+  .first-screen_left_text {
+    margin-bottom: 5%;
+    font-size: 24px;
+    font-size: calc(14px + 10 * (100vw / 1920));
+  }
+
+  .first-screen_left_button_div>img {
+    width: 28%;
+  }
+
+  .first-screen_left_button {
+    margin-right: 10%;
+    font-size: calc(14px + 14 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 1024px) {
   .first-screen {

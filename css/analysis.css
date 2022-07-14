@@ -33,6 +33,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 300px;
+    height: 300px;
 
     font-weight: 600;
     font-size: 58px;
@@ -41,8 +43,7 @@
 
     color: #585858;
     background: inherit;
-    width: 300px;
-    height: 300px;
+
     border: 20px solid #2DC747;
     border-radius: 50%;
   }
@@ -89,7 +90,46 @@
   }
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .analysis_header {
+    font-size: calc(14px + 41 * (100vw / 1920));
+  }
+
+  .progress-bar {
+    font-size: calc(14px + 41 * (100vw / 1920));
+    width: 200px;
+    height: 200px;
+  }
+
+  .checkpoints {
+    font-weight: 500;
+    font-size: calc(14px + 16 * (100vw / 1920));
+  }
+
+  .checkpoints>li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .checkpoints>li:not(:last-child)::before {
+    content: '';
+    background-image: url(../img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    margin-right: 17px;
+  }
+
+  .checkpoints>li:last-child::before {
+    content: '';
+    background-image: url(../img/loading.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    margin-right: 17px;
+  }
+}
 
 @media only screen and (max-width : 1024px) {}
 

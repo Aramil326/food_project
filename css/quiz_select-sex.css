@@ -60,8 +60,9 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
+    /* width: calc(14px + 16 * (100vw / 1920)); */
     width: 40%;
-    /* height: 555px; */
+    height: 481.23px;
     background: #FEEAD2;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease;
@@ -77,7 +78,9 @@
     box-shadow: 0px 0px 10px #FB9333;
   }
 
-
+  .quiz_select-sex_card-box_card>img:first-of-type {
+    height: 80%;
+  }
 
   .quiz_select-sex_title {
     margin-bottom: 20px;
@@ -92,7 +95,7 @@
   .apple {
     width: 20%;
     position: absolute;
-    top: 300px;
+    top: 70%;
     left: 0;
     filter: drop-shadow(20px 20px 20px #EB6839);
   }
@@ -100,8 +103,8 @@
   .cherry {
     width: 20%;
     position: absolute;
-    top: 115px;
-    left: 28px;
+    top: 20%;
+    left: 5%;
     filter: drop-shadow(20px 20px 20px #C22D46);
     transform: matrix(0.75, -0.65, 0.68, 0.75, 0, 0);
   }
@@ -109,48 +112,48 @@
   .mango {
     width: 20%;
     position: absolute;
-    top: 120px;
-    right: 44px;
+    top: 25%;
+    right: 5%;
     filter: drop-shadow(20px 20px 20px #C89D24);
   }
 
   .grape {
     width: 20%;
     position: absolute;
-    top: 356px;
-    right: 16px;
+    top: 65%;
+    right: 3%;
     filter: drop-shadow(20px 20px 20px #6B4AAB);
   }
 
   .pear {
     width: 20%;
     position: absolute;
-    top: 371px;
-    right: 38px;
+    top: 70%;
+    right: 5%;
     filter: drop-shadow(20px 20px 20px #BF9F24);
   }
 
   .kiwi {
     width: 15%;
     position: absolute;
-    top: 180px;
-    right: 58px;
+    top: 30%;
+    right: 15%;
     filter: drop-shadow(20px 20px 20px #88BA2F);
   }
 
   .lemon {
     width: 15%;
     position: absolute;
-    top: 345px;
-    left: 71px;
+    top: 75%;
+    left: 7%;
     filter: drop-shadow(20px 20px 20px #FFD635);
   }
 
   .berry {
     width: 10%;
     position: absolute;
-    top: 159px;
-    left: 73px;
+    top: 30%;
+    left: 10%;
     filter: drop-shadow(20px 20px 20px #CA7979);
   }
 
@@ -197,12 +200,55 @@
     padding: 50px;
   }
 
-  .quiz_select-sex_card-box_card>img:first-of-type {
-    width: 53.2%;
+  .quiz_select-sex_card-box_card {
+    height: 473.23px;
   }
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .quiz_select-sex_header {
+    /* margin-bottom: 20px; */
+    font-size: calc(14px + 41 * (100vw / 1920));
+  }
+
+  .quiz_select-sex_card-box_card {
+    height: 344.23px;
+  }
+
+  .quiz_select-sex_title {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: calc(14px + 34 * (100vw / 1920));
+  }
+
+  .apple {
+    width: 15%;
+  }
+
+  .cherry {
+    width: 15%;
+  }
+
+  .mango {
+    width: 15%;
+  }
+
+  .grape {
+    width: 15%;
+  }
+
+  .bittons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .previous,
+  .next {
+    padding: 10px 60px;
+    font-weight: 500;
+    font-size: calc(14px + 8 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 1024px) {}
 

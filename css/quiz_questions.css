@@ -124,7 +124,27 @@
   }
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .quiz_questions_header {
+    font-size: calc(14px + 41 * (100vw / 1920));
+  }
+
+  .quiz_questions_card-box_wrap {
+    width: 70%;
+  }
+
+  .quiz_questions_card-box_wrap>.card {
+    height: 164px;
+  }
+
+  .quiz_questions_card-box_wrap>.card>h3 {
+    font-size: calc(14px + 4 * (100vw / 1920));
+  }
+
+  .quiz_questions_card-box_wrap>.card>img {
+    height: 65%;
+  }
+}
 
 @media only screen and (max-width : 1024px) {}
 

@@ -84,6 +84,39 @@
   }
 }
 
+@media only screen and (max-width : 1366px) {
+  .plan {
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .plan_left {
+    width: 40%;
+  }
+
+  .plan_left>img {
+    width: 80%;
+  }
+
+  .plan_right>h2 {
+    margin-bottom: 20px;
+    font-size: calc(14px + 46 * (100vw / 1920));
+    line-height: calc(14px + 60 * (100vw / 1920));
+  }
+
+  .plan_right>p {
+    margin-bottom: 50px;
+    font-size: calc(14px + 16 * (100vw / 1920));
+  }
+
+  .plan_button {
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    font-size: calc(14px + 16 * (100vw / 1920));
+  }
+}
+
 @media only screen and (max-width : 1024px) {}
 
 @media only screen and (max-width : 768px) {}

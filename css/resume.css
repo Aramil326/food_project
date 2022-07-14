@@ -153,7 +153,12 @@
   }
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .resume_header {
+    margin-bottom: 40px;
+    font-size: calc(14px + 41 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 1024px) {}
 

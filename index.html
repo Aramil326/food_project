@@ -100,7 +100,7 @@
     <div class="quiz_select-sex_card-box">
       <div class="quiz_select-sex_card-box_card">
         <h2 class="quiz_select-sex_title">Мужчина</h2>
-        <img src="img/quiz-man.png" alt="Мужчина" width="50%">
+        <img src="img/quiz-man.png" alt="Мужчина">
         <img src="img/apple.png" alt="apple" width="116px" class="apple">
         <img src="img/cherry.png" alt="cherry" width="105px" class="cherry">
         <img src="img/mango.png" alt="mango" width="96px" class="mango">
@@ -108,7 +108,7 @@
       </div>
       <div class="quiz_select-sex_card-box_card">
         <h2 class="quiz_select-sex_title">Женщина</h2>
-        <img src="img/quiz-girl.png" alt="Женщина" width="40%">
+        <img src="img/quiz-girl.png" alt="Женщина">
 
         <img src="img/pear.png" alt="pear" class="pear" width="112">
         <img src="img/kiwi.png" alt="kiwi" class="kiwi" width="97">
@@ -551,7 +551,7 @@
         чудеса, рекомендую всем попробовать это на себе, точно не пожалеете, главное следовать предложенному плану.
       </p>
     </div>
-    <div class="reviews_card">
+    <div class="reviews_card" style="display: none;">
       <img src="img/review-1.png" alt="person" width="324px">
       <h2>Дарья</h2>
       <h3>24 года</h3>
@@ -619,7 +619,7 @@
         </div>
         <div class="getting_card">
           <div class="getting_card_left">
-            <img src="img/getting_chief.png" alt="chief" width="64px">
+            <img src="img/getting_chief.png" alt="chief" width="102px">
           </div>
           <div class="getting_card_right">
             <h2>Быстро и просто</h2>
@@ -688,6 +688,97 @@
     </div>
   </section>
 
+  <section class="payment">
+    <div class="payment_left">
+      <h2>Оформление заказа</h2>
+      <a href=""><img src="img/payment_arrow.png" alt="Вернуться на сайт" width="94px">Вернуться на сайт</a>
+      <div class="payment_left_wrap">
+        <img src="img/plan_book.png" alt="book" width="430px">
+        <div class="payment_left_wrap_content">
+          <h3>Индивидуальный план питания KETO-DAY</h3>
+          <p>Ваш персональный план питания ждет вас! Успейте приобрести доступ к личному кабинету со
+            <span>скидкой!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="payment_right">
+      <h2>До завершения акции осталось:</h2>
+      <div class="payment_right_clock">
+        <div class="payment_right_clock_min">14</div>
+        <div class="payment_right_clock_colon">:</div>
+        <div class="payment_right_clock_sec">01</div>
+      </div>
+      <div class="payment_right_price">
+        <p>899₽</p>
+        <p>49₽</p>
+        <p>с учетом скидки</p>
+      </div>
+      <div class="payment_right_input-contain">
+        <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+        <label class="payment_right_placeholder-text" for="fname" id="placeholder-fname">
+          <div class="payment_right_text">E-mail</div>
+        </label>
+      </div>
+      <button class="payment_right_button">Получить план за 49₽</button>
+      <div class="payment_right_agree">
+        <div class="checkbox">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <p>Направляя адрес электронной почты и нажимая кнопку «Оплатить и получить план за 49₽» я ознакомился и
+              безоговорочно соглашаюсь с <a href="https://">публичной офертой</a>, с <a href="https://">тарифами</a>, с
+              <a href="https://">политикой
+                конфиденциальности</a> и даю <a href="https://">согласие</a> на
+              обработку своих персональных данных.
+            </p>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="payment_popup" style="display:none;">
+      <div class="payment_popup_form">
+        <h1>Индивидуальный план питания KETO-DAY</h1>
+        <p class="payment_popup_form_price">49₽</p>
+        <p class="payment_popup_form_card-number">
+          Номер карты
+        </p>
+        <input type="text" class="payment_popup_form_card-number_input" placeholder="От 16 до 19 цифр">
+        <div class="payment_popup_form_wrap">
+          <div class="payment_popup_form_wrap_validity-period">
+            <p>Срок действия</p>
+            <input type="text" class="payment_popup_form_wrap_input" placeholder="ММ/ГГ">
+          </div>
+          <div class="payment_popup_form_wrap_cv">
+            <p>CV код</p>
+            <input type="text" class="payment_popup_form_wrap_input_cv" placeholder="***">
+          </div>
+        </div>
+        <div class="payment_popup_form_checkbox">
+          <input type="checkbox" id="">
+          <label for="">
+            <p>Отправить квитанцию на E-mail</p>
+          </label>
+        </div>
+        <p>E-mail</p>
+        <input type="text" class="payment_popup_form_card-number_input" placeholder="ivanov_ivan@mail.ru">
+
+        <button class="payment_popup_form_button">
+          Подтвердить оплату
+        </button>
+
+        <div class="payment_popup_form_secure-connection">
+          <div class="payment_popup_form_secure-connection_https">
+            <img src="img/secure-connection_https.png" alt="HTTPS" width="17px">
+            <p>HTTPS/SSL</p>
+          </div>
+          <p>Защищённое соединение</p>
+        </div>
+
+        <img src="img/secured-by.png" alt="secured-by">
+        <img class="payment_popup_form_close" src="/img/close.png" alt="close" width="30px">
+      </div>
+    </div>
+  </section>
   <section class="payment">
     <div class="payment_left">
       <h2>Оформление заказа</h2>
