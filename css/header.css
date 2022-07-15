@@ -75,9 +75,7 @@
   header {
     padding: 50px 50px;
   }
-}
 
-@media only screen and (max-width : 1366px) {
   header>a {
     width: 10%;
   }
@@ -97,6 +95,17 @@
     text-align: center;
     font-weight: 500;
     font-size: calc(14px + 5 * (100vw / 1920));
+  }
+}
+
+@media only screen and (max-width : 1366px) {
+  header {
+    padding: 30px 40px;
+  }
+
+  .header_contact-us {
+    width: 15%;
+    font-size: calc(14px + 1 * (100vw / 1920));
   }
 }
 

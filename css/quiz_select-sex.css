@@ -206,12 +206,24 @@
 }
 
 @media only screen and (max-width : 1366px) {
+  .quiz_select-sex {
+    padding: 30px 40px;
+  }
+
   .quiz_select-sex_header {
     font-size: calc(14px + 41 * (100vw / 1920));
   }
 
+  .quiz_select-sex_pagination {
+    margin-bottom: 25px;
+  }
+
+  .quiz_select-sex_card-box {
+    margin-bottom: 25px;
+  }
+
   .quiz_select-sex_card-box_card {
-    height: 344.23px;
+    height: 278.94px;
   }
 
   .quiz_select-sex_title {
