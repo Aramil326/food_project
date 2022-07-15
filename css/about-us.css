@@ -78,6 +78,12 @@
   .about-us {
     padding: 0 50px 50px 50px;
   }
+
+  .about-us>h1 {
+    margin-bottom: 50px;
+    font-size: calc(14px + 55 * (100vw / 1920));
+  }
+
 }
 
 @media only screen and (max-width : 1366px) {}

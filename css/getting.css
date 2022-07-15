@@ -149,25 +149,6 @@
     margin-bottom: 25px;
   }
 
-  /*  */
-  .getting_card {
-    padding: 15px 15px 15px 0;
-    /* width: 735px; */
-    display: flex;
-    align-items: center;
-    background: #FEEAD2;
-    box-shadow: 0px 0px 4px #FB9333;
-    border-radius: 20px;
-  }
-
-  /*  */
-  .getting_card_left {
-    width: 147px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .getting_card_left>img {
     width: 50%;
   }

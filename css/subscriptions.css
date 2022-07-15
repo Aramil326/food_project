@@ -158,6 +158,52 @@
   .subscriptions {
     padding: 50px;
   }
+
+  .subscriptions>h1 {
+    margin-bottom: 50px;
+    font-size: calc(14px + 55 * (100vw / 1920));
+  }
+
+  .subscriptions_card-box_item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .subscriptions_card-box_item {
+    padding: 50px 35px;
+  }
+
+  .subscriptions_card-box_item_content>h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: calc(14px + 36 * (100vw / 1920));
+  }
+
+  .subscriptions_card-box_item_content>p {
+    font-size: 25px;
+    font-size: calc(14px + 11 * (100vw / 1920));
+  }
+
+  .subscriptions_card-box_item_content>p:nth-of-type(2) {
+    margin-top: 25px;
+  }
+
+  .subscriptions_card-box_item_content_buttons {
+    margin-bottom: 40px;
+  }
+
+  .subscriptions_card-box_item_content_buttons_button {
+    font-size: 25px;
+    font-size: calc(14px + 11 * (100vw / 1920));
+  }
+
+  .subscriptions_card-box_item_content_buttons_button:not(:last-of-type) {
+    margin-right: 25px;
+  }
+
+  .subscriptions_card-box_item_content_button {
+    padding: 17px 70px;
+    font-size: calc(14px + 11 * (100vw / 1920));
+  }
 }
 
 @media only screen and (max-width : 1366px) {}

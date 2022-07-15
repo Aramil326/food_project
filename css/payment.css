@@ -379,7 +379,7 @@
     position: absolute;
     z-index: 2;
     top: 15px;
-    left: 544px;
+    right: -50px;
   }
 
   .payment_popup_form_close:hover {
@@ -475,7 +475,7 @@
     height: 21px;
 
     font-weight: 400;
-    font-size: 15px;
+    font-size: calc(14px + 1 * (100vw / 1920));
     line-height: 140%;
     letter-spacing: 0.13em;
 
@@ -484,16 +484,6 @@
     border-radius: 8px;
     border: none;
     outline: 1px solid #585858;
-  }
-
-  .payment_popup_form_wrap_input_cv {
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 140%;
-    letter-spacing: 0.13em;
-
-    color: #585858;
   }
 
   .payment_popup_form_checkbox {
@@ -639,7 +629,25 @@
   }
 }
 
+@media only screen and (max-width : 1440px) {
+  .payment_right_clock {
+    margin: 10px 0 30px;
+  }
 
+  .payment_right_clock_min,
+  .payment_right_clock_sec {
+    height: calc(14px + 120 * (100vw / 1920));
+    width: calc(14px + 120 * (100vw / 1920));
+  }
+
+  .payment_right_clock_min,
+  .payment_right_clock_sec,
+  .payment_right_clock_colon {
+    font-size: calc(14px + 66 * (100vw / 1920));
+  }
+}
+
+@media only screen and (max-width : 1366px) {}
 
 @media only screen and (max-width : 1024px) {}
 

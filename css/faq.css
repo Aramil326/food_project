@@ -73,7 +73,25 @@
   }
 }
 
-@media only screen and (max-width : 1440px) {}
+@media only screen and (max-width : 1440px) {
+  .faq>h1 {
+    font-size: calc(14px + 55 * (100vw / 1920));
+  }
+
+  .faq_acordeon-box_item {
+    width: calc(100% - 75px);
+  }
+
+  .faq_acordeon-box_item>h2 {
+    font-weight: 500;
+    font-size: calc(14px + 20 * (100vw / 1920));
+  }
+
+  .faq_acordeon-box_item>p {
+    font-weight: 300;
+    font-size: calc(14px + 15 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 1366px) {}
 

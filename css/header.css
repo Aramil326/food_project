@@ -91,24 +91,12 @@
     font-size: calc(14px + 10 * (100vw / 1920));
   }
 
-  .header_nav>li>a:hover {
-    color: #FB9333;
-
-    cursor: pointer;
-  }
-
   .header_contact-us {
     width: 20%;
     padding: 15px 0;
     text-align: center;
     font-weight: 500;
     font-size: calc(14px + 5 * (100vw / 1920));
-  }
-
-  .header_contact-us:hover {
-    color: #FB9333;
-    background: #FFFFFF;
-    outline: 1px solid #FB9333;
   }
 }
 

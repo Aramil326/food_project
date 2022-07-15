@@ -138,44 +138,6 @@
     margin-bottom: 20%;
   }
 
-  .reviews_content_slides {
-    display: flex;
-    margin-bottom: 34px;
-  }
-
-  .reviews_content_slide {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: #CCCCCC;
-  }
-
-  .reviews_content_control {
-    display: flex;
-  }
-
-  .reviews_content_control_prev,
-  .reviews_content_control_next {
-    border: none;
-    padding: 25px;
-    border-radius: 10px;
-  }
-
-  .reviews_content_control_prev:hover,
-  .reviews_content_control_next:hover {
-    cursor: pointer;
-  }
-
-  .reviews_content_control_prev {
-    background: #FFD7A0;
-    margin-right: 30px;
-  }
-
-  .reviews_content_control_next {
-    background: #FB9333;
-  }
-
   .reviews_card {
     display: flex;
     flex-direction: column;

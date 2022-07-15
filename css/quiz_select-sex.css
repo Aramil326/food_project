@@ -207,7 +207,6 @@
 
 @media only screen and (max-width : 1366px) {
   .quiz_select-sex_header {
-    /* margin-bottom: 20px; */
     font-size: calc(14px + 41 * (100vw / 1920));
   }
 
