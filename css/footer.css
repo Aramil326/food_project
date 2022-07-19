@@ -58,7 +58,7 @@
 
 @media only screen and (max-width : 1440px) {
   footer {
-    padding: 50px 50px;
+    padding: 30px 40px;
   }
 
   footer>a {
@@ -102,7 +102,27 @@
 
 @media only screen and (max-width : 1366px) {}
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  footer>p {
+    font-size: calc(14px + 0.5 * (100vw / 1920));
+  }
+
+  .footer_payment>h2 {
+    margin-bottom: 5px;
+  }
+
+  .footer_payment_img>img {
+    height: 80%;
+  }
+
+  .footer_nav {
+    width: 25%;
+  }
+
+  .footer_nav>li>a {
+    font-size: calc(14px + 1 * (100vw / 1920));
+  }
+}
 
 
 @media only screen and (max-width : 768px) {}

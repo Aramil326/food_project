@@ -30,8 +30,9 @@
   .resume_card-box_card {
     margin: 0 1.5% 3% 1.5%;
     display: flex;
+    height: 360px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     background: #FFFFFF;
@@ -86,27 +87,6 @@
     color: #585858
   }
 
-  .resume_card-box_card_girl-boy {
-    margin: 32.5px 0;
-  }
-
-  .resume_card-box_card_pie-chart {
-    margin: 14.5px 0;
-  }
-
-  .resume_card-box_card_resume_zones {
-    margin: 26px 0;
-  }
-
-  .resume_card-box_card_water {
-    margin: 3.5px 0;
-  }
-
-  .resume_card-box_card_KBJU {
-    margin: 49px 0;
-  }
-
-
   .resume_wrapper {
     margin-top: 38px;
     display: flex;
@@ -151,6 +131,10 @@
   .resume {
     padding: 50px;
   }
+
+  .resume_card-box_card {
+    height: 340px;
+  }
 }
 
 @media only screen and (max-width : 1366px) {
@@ -172,9 +156,7 @@
     font-weight: 600;
     font-size: calc(14px + 14 * (100vw / 1920));
   }
-}
 
-@media only screen and (max-width : 1024px) {
   .resume_card-box_card_header {
     width: 300px;
   }
@@ -212,6 +194,32 @@
 
   .resume_wrapper>img {
     width: 15%;
+  }
+}
+
+@media only screen and (max-width : 1024px) {
+  .resume_card-box_card {
+    justify-content: space-between;
+  }
+
+  .resume_card-box_card {
+    width: 45%;
+  }
+
+  .resume_card-box_card_header {
+    width: calc(100% - 44px);
+  }
+
+  .resume_card-box_card>img {
+    width: 95%;
+  }
+
+  .resume_button {
+    margin: 0 30px;
+  }
+
+  .resume_button:hover {
+    margin: 0 15px;
   }
 }
 

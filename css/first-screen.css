@@ -177,7 +177,11 @@
   }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .first-screen_left_button {
+    padding: 20px 20px;
+  }
+}
 
 
 @media only screen and (max-width : 768px) {}

@@ -111,13 +111,29 @@
 }
 
 @media only screen and (max-width : 1024px) {
+  .header_nav>li>a {
+    font-size: calc(14px + 5 * (100vw / 1920));
+  }
+
   .header_contact-us {
     width: 20%;
   }
 }
 
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  header {
+    padding: 34px;
+  }
+
+  header>a {
+    width: 13%;
+  }
+
+  .header_logo {
+    width: 100%;
+  }
+}
 
 
 

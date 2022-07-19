@@ -95,7 +95,23 @@
 
 @media only screen and (max-width : 1366px) {}
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .faq_acordeon-box_item {
+    padding: 10px 10px 10px 20px;
+  }
+
+  .faq_acordeon-box_item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .faq_acordeon-box_item>h2 {
+    font-size: calc(14px + 10 * (100vw / 1920));
+  }
+
+  .faq_acordeon-box_item>p {
+    font-size: calc(14px + 5 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 768px) {}
 

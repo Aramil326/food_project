@@ -229,7 +229,19 @@
   }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .reviews_content {
+    width: 45%;
+  }
+
+  .reviews_content>h1 {
+    width: 100%;
+  }
+
+  .reviews_content>p {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width : 768px) {}
 

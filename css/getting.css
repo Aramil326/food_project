@@ -121,6 +121,10 @@
 }
 
 @media only screen and (max-width : 1366px) {
+  .getting {
+    padding: 30px 40px;
+  }
+
   .getting_header {
     margin-bottom: 40px;
     font-size: calc(14px + 41 * (100vw / 1920));
@@ -176,7 +180,23 @@
   }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .getting_card_right>p {
+    width: 500px;
+  }
+
+  .getting_gallery_item_right>h2 {
+    margin-bottom: 10px;
+  }
+
+  .getting_gallery_item_right>p {
+    font-size: calc(14px + 1 * (100vw /1920));
+  }
+
+  .getting_gallery_item:not(:last-child) {
+    margin: 0;
+  }
+}
 
 @media only screen and (max-width : 768px) {}
 

@@ -828,7 +828,38 @@
   }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+
+  .payment_right_input-contain>input,
+  .payment_right_placeholder-text {
+    font-size: 1rem;
+  }
+
+  .payment_right_agree {
+    width: 100%;
+  }
+
+  .payment_popup_form>p {
+    font-size: calc(10px + 1 * (100vw / 1920));
+  }
+
+  .payment_popup_form_wrap>div>p {
+    font-size: calc(10px + 1 * (100vw / 1920));
+  }
+
+  .payment_popup_form_checkbox>label>p {
+    line-height: 130%;
+  }
+
+  .payment_popup_form_card-number_input {
+    font-size: calc(10px + 1 * (100vw / 1920));
+  }
+
+  .payment_popup_form_wrap_input,
+  .payment_popup_form_wrap_input_cv {
+    font-size: calc(10px + 1 * (100vw / 1920));
+  }
+}
 
 
 @media only screen and (max-width : 768px) {}

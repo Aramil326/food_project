@@ -54,6 +54,7 @@
   }
 
   .quiz_questions_meat_card-box {
+    width: 100%;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
