@@ -154,13 +154,66 @@
 }
 
 @media only screen and (max-width : 1366px) {
+  .resume {
+    padding: 30px 40px;
+  }
+
   .resume_header {
     margin-bottom: 40px;
     font-size: calc(14px + 41 * (100vw / 1920));
   }
+
+  .resume_wrapper {
+    margin: 0;
+  }
+
+  .resume_button {
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: calc(14px + 14 * (100vw / 1920));
+  }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .resume_card-box_card_header {
+    width: 300px;
+  }
+
+  .resume_card-box_card_header>h3 {
+    font-size: calc(14px + 14 * (100vw / 1920));
+  }
+
+  .resume_card-box_card_title {
+    font-size: calc(14px + 32 * (100vw / 1920));
+  }
+
+  .resume_card-box_card_subtitle {
+    font-size: calc(14px + 10 * (100vw / 1920));
+  }
+
+  .resume_button {
+    margin: 0 60px;
+    padding: 21px 21px;
+    display: inline-block;
+    font-size: calc(14px + 8 * (100vw / 1920));
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background: #FB9333;
+    border-radius: 32px;
+    border: none;
+    color: #FFFFFF;
+  }
+
+  .resume_wrapper {
+    justify-content: center;
+  }
+
+  .resume_wrapper>img {
+    width: 15%;
+  }
+}
 
 @media only screen and (max-width : 768px) {}
 

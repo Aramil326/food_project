@@ -104,12 +104,17 @@
   }
 
   .header_contact-us {
+    padding: 10px 0;
     width: 15%;
     font-size: calc(14px + 1 * (100vw / 1920));
   }
 }
 
-@media only screen and (max-width : 1024px) {}
+@media only screen and (max-width : 1024px) {
+  .header_contact-us {
+    width: 20%;
+  }
+}
 
 
 @media only screen and (max-width : 768px) {}

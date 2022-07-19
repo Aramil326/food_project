@@ -86,7 +86,33 @@
 
 }
 
-@media only screen and (max-width : 1366px) {}
+@media only screen and (max-width : 1366px) {
+  .about-us {
+    padding: 0 40px 30px 40px;
+  }
+
+  .about-us>h1 {
+    font-weight: 500;
+    font-size: calc(14px + 55 * (100vw / 1920));
+  }
+
+  .about-us_content {
+    padding: 40px;
+  }
+
+  .about-us_content>h2 {
+    margin-bottom: 25px;
+    width: 80%;
+    font-weight: 400;
+    font-size: calc(14px + 36 * (100vw / 1920));
+  }
+
+  .about-us_content>p {
+    margin-bottom: calc(14px + 16 * (100vw / 1920));
+    font-weight: 300;
+    font-size: calc(14px + 16 * (100vw / 1920));
+  }
+}
 
 @media only screen and (max-width : 1024px) {}
 

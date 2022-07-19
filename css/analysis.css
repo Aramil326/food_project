@@ -91,8 +91,17 @@
 }
 
 @media only screen and (max-width : 1366px) {
+  .analysis {
+    padding: 30px 40px;
+  }
+
   .analysis_header {
+    margin-bottom: 91px;
     font-size: calc(14px + 41 * (100vw / 1920));
+  }
+
+  .analysis_content {
+    margin-bottom: 91px;
   }
 
   .progress-bar {

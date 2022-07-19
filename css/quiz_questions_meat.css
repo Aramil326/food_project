@@ -29,17 +29,24 @@
   }
 
   .quiz_questions_meat_pagination>li {
-    height: 2px;
+    display: flex;
+    align-items: flex-end;
+    height: 15px;
     width: 10%;
+  }
+
+  .quiz_questions_meat_pagination>li>div {
+    width: 100%;
     background-color: #FB9333;
+    height: 2px;
+  }
+
+  .active_pagination {
+    height: 15px;
   }
 
   .quiz_questions_meat_pagination>li:hover {
     cursor: pointer;
-  }
-
-  .active_pagination {
-    height: 15px !important;
   }
 
   .quiz_questions_meat_pagination>li:not(:last-child) {
@@ -117,22 +124,45 @@
 }
 
 @media only screen and (max-width : 1366px) {
+  .quiz_questions_meat {
+    padding: 30px 40px;
+  }
+
   .quiz_questions_meat_header {
     font-size: calc(14px + 41 * (100vw / 1920));
   }
 
+  .quiz_questions_meat_pagination {
+    margin-bottom: 25px;
+  }
+
+  .quiz_questions_meat_pagination>li {
+    height: 10px;
+  }
+
+  .quiz_questions_meat_card-box {
+    margin-bottom: 25px;
+  }
+
   .quiz_questions_meat_card-box_wrap {
-    width: 70%;
+    width: 65%;
   }
 
   .quiz_questions_meat_card-box_wrap>.card {
-    height: 164px;
+    padding-top: 10px;
+    height: 122.5px;
   }
 
   .quiz_questions_meat_card-box_wrap>.card>h3 {
     width: 100%;
-    font-weight: 500;
-    font-size: calc(14px + 6 * (100vw / 1920));
+    font-weight: 400;
+    font-size: calc(14px + 2 * (100vw / 1920));
+  }
+
+  .quiz_questions_meat_card-box_wrap>.card>img {
+    /* margin-top: 5px; */
+    height: 60%;
+    margin-bottom: 5px;
   }
 }
 
