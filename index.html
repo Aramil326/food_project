@@ -42,15 +42,22 @@
   <header>
     <a href=""><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
     <ul class="header_nav">
+      <a href="" class="header_hamburger_close">
+        <img src="img/header_hamburger_close.png" alt="">
+      </a>
       <li><a href="index.html" class="header_nav_active">Главная</a></li>
       <li><a href="about.html">О нас</a></li>
       <li><a href="contact.html">Контакты</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="">Оферта</a></li>
       <li><a href="">Тарифы</a></li>
+
     </ul>
     <a href="" class="header_contact-us">
       Связаться с нами
+    </a>
+    <a class="header_hamburger">
+      <img src="img/header_hamburger.png" alt="menu">
     </a>
   </header>
 
@@ -86,33 +93,35 @@
   </section>
 
   <section class="quiz_select-sex">
-    <h1 class="quiz_select-sex_header">Выберите пол</h1>
-    <ul class="quiz_select-sex_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+    <div class="quiz_select-sex_wrap">
+      <h1 class="quiz_select-sex_header">Выберите пол</h1>
+      <ul class="quiz_select-sex_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
     <div class="quiz_select-sex_card-box">
       <div class="quiz_select-sex_card-box_card">
         <h2 class="quiz_select-sex_title">Мужчина</h2>
@@ -140,33 +149,35 @@
   </section>
 
   <section class="quiz_questions">
-    <h1 class="quiz_questions_header">Физическая активность</h1>
-    <ul class="quiz_questions_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+    <div class="quiz_questions_wrap">
+      <h1 class="quiz_questions_header">Физическая активность</h1>
+      <ul class="quiz_questions_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
     <div class="quiz_questions_card-box">
       <div class="quiz_questions_card-box_wrap">
         <div class="card">
@@ -1027,6 +1038,23 @@
       <li><a href="">Политика конфиденциальности</a></li>
     </ul>
     </div>
+  </footer>
+
+  <script>
+    const windowOuterWidth = window.outerWidth
+    if (window.innerWidth <= 768) {
+      let quizQuestionsCardBoxCards = document.querySelectorAll('.quiz_questions_card-box_wrap .card')
+      // console.log(quizQuestionsCardBoxCards)
+      let quizQuestionsCardBoxWraps = document.querySelectorAll('.quiz_questions_card-box_wrap')
+      quizQuestionsCardBoxWraps.forEach(e => {
+        e.remove()
+      })
+
+      quizQuestionsCardBoxCards.forEach(e => {
+        document.querySelector('.quiz_questions_card-box').append(e);
+      })
+    }
+  </script>
 </body>
 
 </html>

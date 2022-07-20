@@ -9,6 +9,10 @@
     align-items: center;
   }
 
+  .quiz_select-sex_wrap {
+    width: 100%;
+  }
+
   .quiz_select-sex_header {
     margin-bottom: 20px;
     font-weight: 600;
@@ -275,8 +279,108 @@
 @media only screen and (max-width : 1024px) {}
 
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  .quiz_select-sex {
+    padding: 34px;
+    height: calc(100vh - 68px);
+    justify-content: space-between;
+  }
+
+  .quiz_select-sex_header {
+    margin-bottom: 40px;
+    font-size: calc(16px + 60 * (100vw / 1920));
+  }
+
+  .quiz_select-sex_pagination {
+    margin: 0;
+  }
+
+  .quiz_select-sex_pagination>li {
+    width: 12%;
+  }
+
+  .quiz_select-sex_pagination>li:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .quiz_select-sex_card-box {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .quiz_select-sex_card-box_card {
+    height: 324px;
+    width: 49%;
+  }
+
+  .quiz_select-sex_card-box_card>img:first-of-type {
+    height: 70%;
+  }
+
+  .bittons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .previous {
+    margin-right: 10px;
+  }
+
+  .previous,
+  .next {
+    width: 50%;
+    padding: 24px 48px;
+    border-radius: 80px;
+    font-size: calc(8px + 8 * (100vw / 768));
+    line-height: 130%;
+  }
+
+  .next {
+    margin-left: 10px;
+  }
+}
 
 
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .quiz_select-sex {
+    padding: 16px;
+    height: calc(100vh - 32px + 71px);
+  }
+
+  .quiz_select-sex_header {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .quiz_select-sex_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 125px;
+  }
+
+  .quiz_select-sex_card-box_card {
+    height: 148px;
+  }
+
+  .quiz_select-sex_title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .previous {
+    margin-right: 8px;
+  }
+
+  .previous,
+  .next {
+    padding: 16px 36px;
+    font-size: 12px;
+  }
+
+  .next {
+    margin-left: 8px;
+  }
+}
