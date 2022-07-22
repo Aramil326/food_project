@@ -243,6 +243,10 @@
   }
 }
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  .reviews {
+    padding: 34px;
+  }
+}
 
 @media only screen and (max-width : 360px) {}

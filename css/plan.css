@@ -126,6 +126,31 @@
   }
 }
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  .plan {
+    padding: 34px;
+    height: 400px;
+  }
+
+  .plan_right {
+    width: 65%;
+  }
+
+  .plan_right>h2 {
+    margin-bottom: 16px;
+  }
+
+  .plan_right>p {
+    margin-bottom: 14px;
+  }
+
+  .plan_left {
+    width: 30%;
+  }
+
+  .plan_left>img {
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width : 360px) {}

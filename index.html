@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 
   <!-- Стили секций -->
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/first-screen.css">
   <link rel="stylesheet" href="css/quiz_select-sex.css">
@@ -40,7 +41,7 @@
 
 <body>
   <header>
-    <a href=""><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
+    <a href="index.html"><img src="img/logo.png" alt="лого" width="204" class="header_logo"></a>
     <ul class="header_nav">
       <a href="" class="header_hamburger_close">
         <img src="img/header_hamburger_close.png" alt="">
@@ -53,7 +54,7 @@
       <li><a href="">Тарифы</a></li>
 
     </ul>
-    <a href="" class="header_contact-us">
+    <a href="contact.html" class="header_contact-us">
       Связаться с нами
     </a>
     <a class="header_hamburger">
@@ -85,15 +86,16 @@
         ваш индивидуальный план питания
       </p>
       <div class="first-screen_left_button_div">
-        <a href="" class="first-screen_left_button">Получить за 49₽!</a>
+        <a href="#quiz" class="first-screen_left_button">Получить за 49₽!</a>
         <img src="img/arrow.png" alt="Стрелка" width="200px">
       </div>
     </div>
     <img src="img/header-girl.png" alt="Девушка с кето диеты" width="775px">
   </section>
 
-  <section class="quiz_select-sex">
+  <section class="quiz_select-sex quiz" id="quiz_1">
     <div class="quiz_select-sex_wrap">
+      <a name="quiz"></a>
       <h1 class="quiz_select-sex_header">Выберите пол</h1>
       <ul class="quiz_select-sex_pagination">
         <li class="active_pagination">
@@ -142,13 +144,13 @@
 
       </div>
     </div>
-    <div class="bittons">
+    <div class="buttons">
       <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="next" id="quiz_2">Далее</button>
     </div>
   </section>
 
-  <section class="quiz_questions">
+  <section class="quiz_questions quiz" id="quiz_2" style="display: none;">
     <div class="quiz_questions_wrap">
       <h1 class="quiz_questions_header">Физическая активность</h1>
       <ul class="quiz_questions_pagination">
@@ -207,39 +209,42 @@
 
     </div>
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_1">Назад</button>
+      <button class="next" id="quiz_3">Далее</button>
     </div>
   </section>
 
-  <section class="quiz_questions_meat">
-    <h1 class=" quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
-    <ul class="quiz_questions_meat_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+  <section class="quiz_questions_meat quiz" id="quiz_3" style="display: none;">
+    <div class="quiz_questions_meat_wrap">
+      <h1 class=" quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
+      <ul class="quiz_questions_meat_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+
+    </div>
     <div class="quiz_questions_meat_card-box">
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
@@ -257,7 +262,7 @@
       </div>
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
-          <img src="img/chicken.png" alt="chicken">
+          <img src="img/lamb.png" alt="chicken">
           <h3>Баранина</h3>
         </div>
         <div class="card">
@@ -271,30 +276,33 @@
       </div>
     </div>
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_2">Назад</button>
+      <button class="next" id="quiz_4">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat">
-    <h1 class="quiz_questions_meat_header">Какие овощи предпочитаете?</h1>
-    <ul class="quiz_questions_meat_pagination">
-      <li class="active_pagination"></li>
-      <li class="active_pagination"></li>
-      <li class="active_pagination"></li>
-      <li class="active_pagination"></li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+  <section class="quiz_questions_meat quiz" id="quiz_4" style="display: none;">
+    <div class="quiz_questions_meat_wrap">
+      <h1 class="quiz_questions_meat_header">Какие овощи предпочитаете?</h1>
+      <ul class="quiz_questions_meat_pagination">
+        <li class="active_pagination"></li>
+        <li class="active_pagination"></li>
+        <li class="active_pagination"></li>
+        <li class="active_pagination"></li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+
+    </div>
     <div class="quiz_questions_meat_card-box">
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
@@ -327,38 +335,41 @@
     </div>
 
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_3">Назад</button>
+      <button class="next" id="quiz_5">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat">
-    <h1 class="quiz_questions_meat_header">Что выберете из молочной продукции?</h1>
-    <ul class="quiz_questions_meat_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+  <section class="quiz_questions_meat quiz" id="quiz_5" style="display: none;">
+    <div class="quiz_questions_meat_wrap">
+      <h1 class="quiz_questions_meat_header">Что выберете из молочной продукции?</h1>
+      <ul class="quiz_questions_meat_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+
+    </div>
     <div class="quiz_questions_meat_card-box">
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
@@ -391,38 +402,40 @@
 
     </div>
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_4">Назад</button>
+      <button class="next" id="quiz_6">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat">
-    <h1 class="quiz_questions_meat_header">Что еще предпочитаете?</h1>
-    <ul class="quiz_questions_meat_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+  <section class="quiz_questions_meat quiz" id="quiz_6" style="display: none;">
+    <div class="quiz_questions_meat_wrap">
+      <h1 class="quiz_questions_meat_header">Что еще предпочитаете?</h1>
+      <ul class="quiz_questions_meat_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
     <div class="quiz_questions_meat_card-box">
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
@@ -455,38 +468,40 @@
 
     </div>
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_5">Назад</button>
+      <button class="next" id="quiz_7">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat">
-    <h1 class="quiz_questions_meat_header">Вредные привычки</h1>
-    <ul class="quiz_questions_meat_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
+  <section class="quiz_questions_meat quiz" id="quiz_7" style="display: none;">
+    <div class="quiz_questions_meat_wrap">
+      <h1 class="quiz_questions_meat_header">Вредные привычки</h1>
+      <ul class="quiz_questions_meat_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </div>
     <div class="quiz_questions_meat_card-box">
       <div class="quiz_questions_meat_card-box_wrap">
         <div class="card">
@@ -519,39 +534,41 @@
 
     </div>
     <div class="buttons">
-      <button class="previous">Назад</button>
-      <button class="next">Далее</button>
+      <button class="previous" id="quiz_6">Назад</button>
+      <button class="next" id="quiz_8">Далее</button>
     </div>
   </section>
 
-  <section class="parametrs">
-    <h1 class="parametrs_header">Ваши параметры</h1>
-    <ul class="parametrs_pagination">
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-      <li class="active_pagination">
-        <div></div>
-      </li>
-    </ul>
+  <section class="parametrs quiz" id="quiz_8" style="display: none;">
+    <div class="parametrs_wrap">
+      <h1 class="parametrs_header">Ваши параметры</h1>
+      <ul class="parametrs_pagination">
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+        <li class="active_pagination">
+          <div></div>
+        </li>
+      </ul>
+    </div>
 
     <form class="parametrs_form" action="">
       <input class="parametrs_form_input" type="text" placeholder="Ваш возраст">
@@ -561,12 +578,12 @@
     </form>
 
     <div class="buttons">
-      <button class="previous">Назад</button>
+      <button class="previous" id="quiz_7">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
 
-  <section class="analysis">
+  <section class="analysis quiz" id="quiz_9" style="display: none;">
     <h1 class="analysis_header">Происходит анализ ваших данных</h1>
     <div class="analysis_content">
       <div class="progress-bar">75%</div>
@@ -578,7 +595,7 @@
       </ul>
     </div>
   </section>
-  <section class="resume">
+  <section class="resume quiz" id="quiz_10" style="display: none;">
     <h1 class="resume_header">Резюме вашего профиля</h1>
     <div class="resume_card-box">
       <div class="resume_card-box_card">
@@ -648,7 +665,7 @@
     </div>
     <div class="resume_wrapper">
       <img style="transform: rotate(180deg);" src="img/arrow.png" alt="Стрелка" width="200px">
-      <a href="" class="resume_button">Получить прямо сейчас за 49₽</a>
+      <a href="" class="resume_button">Получить план за 49₽</a>
       <img src="img/arrow.png" alt="Стрелка" width="200px">
     </div>
 
@@ -1003,7 +1020,7 @@
   </section>
 
   <footer>
-    <a href="">
+    <a href="index.html">
       <img src="img/logo-2.png" alt="logo" width="204px">
     </a>
     <p>© 2021. Keto-World.ru ООО «Правильное Питание»
@@ -1040,21 +1057,11 @@
     </div>
   </footer>
 
-  <script>
-    const windowOuterWidth = window.outerWidth
-    if (window.innerWidth <= 768) {
-      let quizQuestionsCardBoxCards = document.querySelectorAll('.quiz_questions_card-box_wrap .card')
-      // console.log(quizQuestionsCardBoxCards)
-      let quizQuestionsCardBoxWraps = document.querySelectorAll('.quiz_questions_card-box_wrap')
-      quizQuestionsCardBoxWraps.forEach(e => {
-        e.remove()
-      })
+  <script src="js/quizQuestionMeat.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/quiz1.js"></script>
 
-      quizQuestionsCardBoxCards.forEach(e => {
-        document.querySelector('.quiz_questions_card-box').append(e);
-      })
-    }
-  </script>
 </body>
 
 </html>

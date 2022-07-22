@@ -263,7 +263,7 @@
     width: 15%;
   }
 
-  .bittons {
+  .buttons {
     display: flex;
     justify-content: space-between;
   }
@@ -286,9 +286,17 @@
     justify-content: space-between;
   }
 
+  .quiz_select-sex_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 154px;
+  }
+
   .quiz_select-sex_header {
     margin-bottom: 40px;
-    font-size: calc(16px + 60 * (100vw / 1920));
+    font-size: calc(16px + 50 * (100vw / 1920));
   }
 
   .quiz_select-sex_pagination {
@@ -317,7 +325,7 @@
     height: 70%;
   }
 
-  .bittons {
+  .buttons {
     width: 100%;
     justify-content: center;
   }
@@ -354,10 +362,6 @@
   }
 
   .quiz_select-sex_wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     height: 125px;
   }
 

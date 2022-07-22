@@ -151,6 +151,40 @@
   }
 }
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  .analysis {
+    padding: 34px;
+    height: calc(100vh - 68px);
+    justify-content: flex-start;
+  }
+
+  .analysis_header {
+    margin-bottom: 82px;
+    font-size: calc(16px + 50 * (100vw / 1920));
+  }
+
+  .analysis_content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .progress-bar {
+    margin-bottom: 100px;
+  }
+
+  .checkpoints {
+    font-weight: 600;
+    font-size: calc(16px + 16 * (100vw / 1920));
+  }
+
+  .checkpoints>li:not(:last-child) {
+    margin-bottom: 34px;
+  }
+
+  .checkpoints>li:not(:last-child)::before {
+    margin-right: 20px;
+    height: 27px;
+  }
+}
 
 @media only screen and (max-width : 360px) {}

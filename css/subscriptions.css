@@ -210,6 +210,38 @@
 
 @media only screen and (max-width : 1024px) {}
 
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width : 768px) {
+  .subscriptions {
+    padding: 34px;
+  }
+
+  .subscriptions_card-box_item {
+    padding: 20px;
+  }
+
+  .subscriptions_card-box_item:not(:last-child) {
+    margin-bottom: 34px;
+  }
+
+  .subscriptions_card-box_item_content {
+    width: 55%;
+  }
+
+  .subscriptions_card-box_item_content>p {
+    font-size: calc(14px + 1 * (100vw / 1920));
+  }
+
+  .subscriptions_card-box_item>img {
+    width: 40%;
+  }
+
+  .subscriptions_card-box_item_content_buttons_button {
+    border-radius: 10px;
+  }
+
+  .subscriptions_card-box_item_content_button {
+    border-radius: 10px;
+  }
+}
 
 @media only screen and (max-width : 360px) {}
