@@ -236,11 +236,12 @@
   }
 
   .resume_card-box {
+    height: 76%;
     margin-bottom: 10px;
   }
 
   .resume_card-box_card {
-    height: 275px;
+    height: 31%;
   }
 
   .resume_card-box_card:nth-of-type(1) {
@@ -268,7 +269,7 @@
   }
 
   .resume_button {
-    padding: 24px 48px;
+    padding: 24px 24px;
     margin: 0 4%;
   }
 

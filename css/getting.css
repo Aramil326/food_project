@@ -214,6 +214,38 @@
   .getting_card_right>p {
     width: 100%;
   }
+
+  .getting_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .getting_gallery_item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  .getting_gallery_item {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 49%;
+  }
+
+  .getting_gallery_item_left {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .getting_gallery_item_right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .getting_gallery_item_ml {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width : 360px) {
@@ -249,8 +281,12 @@
     font-size: 10px;
   }
 
+  .getting_gallery {
+    display: block;
+  }
+
   .getting_gallery_item {
-    flex-direction: column;
+    width: 100%;
   }
 
   .getting_gallery_item:not(:last-of-type) {

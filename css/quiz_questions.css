@@ -192,6 +192,7 @@
   }
 
   .quiz_questions_wrap {
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -222,7 +223,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 40%;
-    height: 234px;
+    height: 30%;
     background: #FEEAD2;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease;
@@ -266,11 +267,12 @@
   }
 
   .quiz_questions_card-box>.card>img {
-    width: 75%;
-    height: auto;
+    width: auto;
+    height: 70%;
   }
 
   .quiz_questions_card-box {
+    height: 63.9%;
     margin: 0;
   }
 
@@ -285,6 +287,7 @@
   }
 
   .buttons {
+    margin-top: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
