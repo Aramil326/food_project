@@ -202,6 +202,73 @@
   .getting {
     padding: 34px;
   }
+
+  .getting_card_right {
+    width: 100%;
+  }
+
+  .getting_card_right>h2 {
+    width: 100%;
+  }
+
+  .getting_card_right>p {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .getting {
+    padding: 16px;
+  }
+
+  .getting_header {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .getting_card-box_right>.getting_card:not(:last-child),
+  .getting_card-box_left>.getting_card:not(:last-child),
+  .getting_card-box_left {
+    margin-bottom: 16px;
+  }
+
+  .getting_card_left {
+    width: 75px;
+  }
+
+  .getting_card {
+    padding: 8px;
+    border-radius: 9px;
+  }
+
+  .getting_card_right>h2 {
+    font-size: 14px;
+  }
+
+  .getting_card_right>p {
+    font-size: 10px;
+  }
+
+  .getting_gallery_item {
+    flex-direction: column;
+  }
+
+  .getting_gallery_item:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+
+  .getting_gallery_item_ml {
+    flex-direction: column-reverse;
+  }
+
+  .getting_gallery_item_left {
+    margin-bottom: 24px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .getting_gallery_item_right {
+    padding: 0;
+    width: 100%;
+  }
+}

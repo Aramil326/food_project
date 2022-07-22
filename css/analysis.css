@@ -187,4 +187,28 @@
   }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .analysis {
+    padding: 16px;
+    height: calc(100vh - 32px + 71px);
+  }
+
+  .analysis_header {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .progress-bar {
+    margin-bottom: 45px;
+    width: 188px;
+    height: 188px;
+  }
+
+  .checkpoints>li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .checkpoints {
+    font-size: 14px;
+  }
+}

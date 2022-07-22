@@ -235,6 +235,10 @@
     font-size: calc(16px + 50 * (100vw / 1920));
   }
 
+  .resume_card-box {
+    margin-bottom: 10px;
+  }
+
   .resume_card-box_card {
     height: 275px;
   }
@@ -265,7 +269,53 @@
 
   .resume_button {
     padding: 24px 48px;
+    margin: 0 4%;
+  }
+
+  .resume_button:hover {
+    margin: 0 2%;
   }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .resume {
+    padding: 16px;
+    height: auto;
+  }
+
+  .resume_header {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .resume_card-box_card {
+    width: 100%;
+  }
+
+  .resume_card-box_card:not(:last-of-type) {
+    margin: 0 0 16px 0;
+  }
+
+  .resume_card-box_card:last-of-type {
+    margin: 0 0 40px 0;
+  }
+
+  .resume_wrapper>img {
+    display: none;
+  }
+
+  .resume_wrapper {
+    width: 100%;
+  }
+
+  .resume_button {
+    margin: 0;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume_button:hover {
+    margin: 0;
+  }
+}

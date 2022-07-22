@@ -268,6 +268,10 @@
     font-size: 24px;
   }
 
+  .first-screen_left_button:hover {
+    margin: 0;
+  }
+
   .first-screen_left_button_div>img {
     display: none;
   }

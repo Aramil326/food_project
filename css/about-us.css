@@ -122,4 +122,32 @@
   }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .about-us {
+    padding: 0 16px 16px 16px;
+  }
+
+  .about-us>h1 {
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    font-size: 28px;
+  }
+
+  .about-us_content {
+    padding: 16px;
+  }
+
+  .about-us_content>h2 {
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .about-us_content>p {
+    margin-bottom: 14px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

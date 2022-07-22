@@ -129,7 +129,7 @@
 }
 
 
-@media only screen and (max-width : 769px) {
+@media only screen and (max-width : 768px) {
   header {
     position: relative;
     padding: 34px;
@@ -148,7 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 65%;
     height: 635px;
     background-color: #ffffff;
     border-radius: 20px 0px 0px 20px;
@@ -159,9 +159,14 @@
   }
 
   .header_hamburger_close {
+    width: 8.5%;
     position: absolute;
     top: 34px;
     right: 34px;
+  }
+
+  .header_hamburger_close>img {
+    width: 100%;
   }
 
   .header_nav>li>a {
@@ -215,5 +220,20 @@
 
   header>a {
     width: 19%;
+  }
+
+  .header_hamburger_close {
+    width: 26px;
+    top: 20px;
+    right: 16px;
+  }
+
+  .header_nav {
+    width: 75%;
+    height: 380px;
+  }
+
+  .header_nav>li>a {
+    font-size: 16px;
   }
 }

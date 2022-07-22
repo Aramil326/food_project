@@ -280,4 +280,17 @@
   }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .contact {
+    padding: 16px;
+  }
+
+  .contact>h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+
+  .contact_form {
+    width: 100%;
+  }
+}

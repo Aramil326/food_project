@@ -138,4 +138,20 @@
   }
 }
 
-@media only screen and (max-width : 360px) {}
+@media only screen and (max-width : 360px) {
+  .faq {
+    padding: 16px;
+  }
+
+  .faq_acordeon-box_item {
+    padding: 20px;
+  }
+
+  .faq_acordeon-box_item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .faq_acordeon-box_item>p {
+    margin-top: 7px;
+  }
+}
