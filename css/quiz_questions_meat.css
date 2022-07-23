@@ -322,3 +322,46 @@
     margin: 8px 0 0 8px;
   }
 }
+
+@media only screen and (max-width : 320px) {
+  .quiz_questions_meat_header {
+    font-size: 15px;
+  }
+
+  .quiz_questions_meat_card-box {
+    justify-content: space-between;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(1) {
+    margin: 0 4px 4px 0;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(2) {
+    margin: 0 0 4px 4px;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(3) {
+    margin: 4px 4px 4px 0;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(4) {
+    margin: 4px 0 4px 4px;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(5) {
+    margin: 4px 4px 0 0;
+  }
+
+  .quiz_questions_meat_card-box>.card:nth-of-type(6) {
+    margin: 4px 0 0 4px;
+  }
+
+  .quiz_questions_meat_card-box>.card {
+    height: 98px;
+    width: 47%;
+  }
+
+  .quiz_questions_meat_card-box>.card>img {
+    margin-bottom: 10px;
+  }
+}

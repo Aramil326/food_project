@@ -212,3 +212,20 @@
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width : 320px) {
+  .analysis_header {
+    font-size: 15px;
+  }
+
+  .progress-bar {
+    margin-bottom: 45px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #2DC747;
+  }
+
+  .analysis_content {
+    height: 90%;
+  }
+}

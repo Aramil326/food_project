@@ -102,7 +102,6 @@
   }
 }
 
-
 @media only screen and (max-width : 1440px) {
   .first-screen {
     padding: 0 50px;
@@ -183,7 +182,6 @@
   }
 }
 
-
 @media only screen and (max-width : 768px) {
   .first-screen {
     padding: 34px;
@@ -234,8 +232,6 @@
   }
 }
 
-
-
 @media only screen and (max-width : 480px) {
   .first-screen {
     padding: 16px;
@@ -274,5 +270,11 @@
 
   .first-screen_left_button_div>img {
     display: none;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .first-screen_left_button {
+    font-size: 20px;
   }
 }
