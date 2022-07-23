@@ -280,7 +280,7 @@
   }
 }
 
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 430px) {
   .contact {
     padding: 16px;
   }

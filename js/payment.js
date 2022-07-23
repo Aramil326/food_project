@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     paymentPopup.scrollIntoView()
   })
 
-  if (window.innerWidth <= 400) {
+  if (window.innerWidth <= 430) {
     closeButton.remove()
     closeButton.src = '/img/close_orange.png'
     paymentPopupForm.prepend(closeButton)

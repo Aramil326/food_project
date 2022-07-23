@@ -153,7 +153,7 @@
   }
 }
 
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 430px) {
   .plan {
     padding: 16px;
     flex-direction: column;
@@ -168,10 +168,4 @@
   .plan_right {
     width: 100%;
   }
-
-  .plan_right>h2 {}
-
-  .plan_right>p {}
-
-  .plan_button {}
 }

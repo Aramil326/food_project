@@ -30,7 +30,7 @@
   .resume_card-box_card {
     margin: 0 1.5% 3% 1.5%;
     display: flex;
-    height: 360px;
+    height: 430px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -278,7 +278,7 @@
   }
 }
 
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 430px) {
   .resume {
     padding: 16px;
     height: auto;
