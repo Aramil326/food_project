@@ -273,7 +273,7 @@
   }
 }
 
-@media only screen and (max-width : 430px) {
+@media only screen and (max-width : 480px) {
   .quiz_questions_meat {
     padding: 16px;
     height: calc(100vh - 32px + 71px);
