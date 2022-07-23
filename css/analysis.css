@@ -159,7 +159,6 @@
   }
 
   .analysis_header {
-    margin-bottom: 82px;
     font-size: calc(16px + 50 * (100vw / 1920));
   }
 
@@ -169,7 +168,7 @@
   }
 
   .progress-bar {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .checkpoints {

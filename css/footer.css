@@ -31,7 +31,9 @@
   }
 
   .footer_payment_img {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
   }
 
   .footer_payment_img:not(:last-child) {

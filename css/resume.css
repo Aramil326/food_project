@@ -240,6 +240,11 @@
     margin-bottom: 10px;
   }
 
+  .resume_card-box_card>img {
+    width: auto;
+    height: 50%;
+  }
+
   .resume_card-box_card {
     height: 31%;
   }
@@ -268,7 +273,17 @@
     margin: 10px 0 0 10px;
   }
 
+  .resume_wrapper {
+    width: 70%;
+  }
+
+  .resume_wrapper>img {
+    display: none;
+  }
+
   .resume_button {
+    text-align: center;
+    width: 100%;
     padding: 24px 24px;
     margin: 0 4%;
   }
