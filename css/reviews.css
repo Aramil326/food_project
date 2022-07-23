@@ -77,6 +77,10 @@
     background: #FB9333;
   }
 
+  .reviews_cards_slider {
+    display: flex;
+  }
+
   .reviews_card {
     position: relative;
     margin-right: 40px;
