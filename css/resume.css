@@ -316,6 +316,10 @@
     margin: 0 0 40px 0;
   }
 
+  .resume_card-box_card_header {
+    background-size: cover;
+  }
+
   .resume_wrapper>img {
     display: none;
   }

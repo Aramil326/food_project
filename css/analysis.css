@@ -163,6 +163,7 @@
   }
 
   .analysis_content {
+    height: 70%;
     flex-direction: column;
     margin: 0;
   }
