@@ -22,6 +22,13 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #585858;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
+    transition: all 0.3s ease;
   }
 
   .quiz_select-sex_pagination {
@@ -86,7 +93,7 @@
   }
 
   .quiz_select-sex_card-box_card:hover {
-    box-shadow: 0px 0px 10px #FB9333;
+    cursor: pointer;
   }
 
   .quiz_select-sex_card-box_card>img:first-of-type {

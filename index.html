@@ -125,7 +125,7 @@
       </ul>
     </div>
     <div class="quiz_select-sex_card-box">
-      <div class="quiz_select-sex_card-box_card">
+      <div class="quiz_select-sex_card-box_card" data-sex="man">
         <h2 class="quiz_select-sex_title">Мужчина</h2>
         <img src="img/quiz-man.png" alt="Мужчина">
         <img src="img/apple.png" alt="apple" width="116px" class="apple">
@@ -133,7 +133,7 @@
         <img src="img/mango.png" alt="mango" width="96px" class="mango">
         <img src="img/grape.png" alt="grape" width="122px" class="grape">
       </div>
-      <div class="quiz_select-sex_card-box_card">
+      <div class="quiz_select-sex_card-box_card" data-sex="woman">
         <h2 class="quiz_select-sex_title">Женщина</h2>
         <img src="img/quiz-girl.png" alt="Женщина">
 
@@ -146,11 +146,11 @@
     </div>
     <div class="buttons">
       <button class="previous">Назад</button>
-      <button class="next" id="quiz_2">Далее</button>
+      <button class="next">Далее</button>
     </div>
   </section>
 
-  <section class="quiz_questions quiz" id="quiz_2">
+  <section class="quiz_questions quiz" id="quiz_2" style="display:none;">
     <div class="quiz_questions_wrap">
       <h1 class="quiz_questions_header">Физическая активность</h1>
       <ul class="quiz_questions_pagination">
@@ -209,12 +209,12 @@
 
     </div>
     <div class="buttons">
-      <button class="previous" id="quiz_1">Назад</button>
-      <button class="next" id="quiz_3">Далее</button>
+      <button class="previous" data-quiz="quiz_1">Назад</button>
+      <button class="next" data-quiz="quiz_3">Далее</button>
     </div>
   </section>
 
-  <section class="quiz_questions_meat quiz" id="quiz_3">
+  <section class="quiz_questions_meat quiz" id="quiz_3" style="display:none;">
     <div class="quiz_questions_meat_wrap">
       <h1 class=" quiz_questions_meat_header">Какое мясо предпочитаете?</h1>
       <ul class="quiz_questions_meat_pagination">
@@ -276,11 +276,11 @@
       </div>
     </div>
     <div class="buttons">
-      <button class="previous" id="quiz_2">Назад</button>
-      <button class="next" id="quiz_4">Далее</button>
+      <button class="previous" data-quiz="quiz_2">Назад</button>
+      <button class="next" data-quiz="quiz_4">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat quiz" id="quiz_4">
+  <section class="quiz_questions_meat quiz" id="quiz_4" style="display:none;">
     <div class="quiz_questions_meat_wrap">
       <h1 class="quiz_questions_meat_header">Какие овощи предпочитаете?</h1>
       <ul class="quiz_questions_meat_pagination">
@@ -335,11 +335,11 @@
     </div>
 
     <div class="buttons">
-      <button class="previous" id="quiz_3">Назад</button>
-      <button class="next" id="quiz_5">Далее</button>
+      <button class="previous" data-quiz="quiz_3">Назад</button>
+      <button class="next" data-quiz="quiz_5">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat quiz" id="quiz_5">
+  <section class="quiz_questions_meat quiz" id="quiz_5" style="display:none;">
     <div class="quiz_questions_meat_wrap">
       <h1 class="quiz_questions_meat_header">Что выберете из молочной продукции?</h1>
       <ul class="quiz_questions_meat_pagination">
@@ -402,11 +402,11 @@
 
     </div>
     <div class="buttons">
-      <button class="previous" id="quiz_4">Назад</button>
-      <button class="next" id="quiz_6">Далее</button>
+      <button class="previous" data-quiz="quiz_4">Назад</button>
+      <button class="next" data-quiz="quiz_6">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat quiz" id="quiz_6">
+  <section class="quiz_questions_meat quiz" id="quiz_6" style="display:none;">
     <div class="quiz_questions_meat_wrap">
       <h1 class="quiz_questions_meat_header">Что еще предпочитаете?</h1>
       <ul class="quiz_questions_meat_pagination">
@@ -468,11 +468,11 @@
 
     </div>
     <div class="buttons">
-      <button class="previous" id="quiz_5">Назад</button>
-      <button class="next" id="quiz_7">Далее</button>
+      <button class="previous" data-quiz="quiz_5">Назад</button>
+      <button class="next" data-quiz="quiz_7">Далее</button>
     </div>
   </section>
-  <section class="quiz_questions_meat quiz" id="quiz_7">
+  <section class="quiz_questions_meat quiz" id="quiz_7" style="display:none;">
     <div class="quiz_questions_meat_wrap">
       <h1 class="quiz_questions_meat_header">Вредные привычки</h1>
       <ul class="quiz_questions_meat_pagination">
@@ -534,8 +534,8 @@
 
     </div>
     <div class="buttons">
-      <button class="previous" id="quiz_6">Назад</button>
-      <button class="next" id="quiz_8">Далее</button>
+      <button class="previous" data-quiz="quiz_6">Назад</button>
+      <button class="next" data-quiz="quiz_8">Далее</button>
     </div>
   </section>
 
@@ -571,14 +571,14 @@
     </div>
 
     <form class="parametrs_form" action="">
-      <input class="parametrs_form_input" type="text" placeholder="Ваш возраст">
-      <input class="parametrs_form_input" type="text" placeholder="Ваш текущий вес">
-      <input class="parametrs_form_input" type="text" placeholder="Ваш текущий рост">
-      <input class="parametrs_form_input" type="text" placeholder="Желаемый вес">
+      <input class="parametrs_form_input" type="number" placeholder="Ваш возраст">
+      <input class="parametrs_form_input" type="number" placeholder="Ваш текущий вес, кг">
+      <input class="parametrs_form_input" type="number" placeholder="Ваш текущий рост, см">
+      <input class="parametrs_form_input" type="number" placeholder="Желаемый вес, кг">
     </form>
 
     <div class="buttons">
-      <button class="previous" id="quiz_7">Назад</button>
+      <button class="previous" data-quiz="quiz_7">Назад</button>
       <button class="next">Далее</button>
     </div>
   </section>
@@ -945,6 +945,8 @@
     </ul>
     </div>
   </footer>
+
+
 
   <script src="js/quizQuestionMeat.js"></script>
   <script src="js/hamburger.js"></script>
