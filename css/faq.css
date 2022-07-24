@@ -54,6 +54,7 @@
   }
 
   .faq_acordeon-box_item>p {
+    display: none;
     width: 100%;
     font-weight: 400;
     font-size: 35px;
@@ -66,6 +67,7 @@
   .faq_acordeon-box_item:hover {
     color: #FFFFFF;
     background: #FB9333;
+    cursor: pointer;
   }
 
   .faq_acordeon-box_item:not(:last-child) {

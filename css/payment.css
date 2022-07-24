@@ -5,6 +5,7 @@
 
     font-family: 'Montserrat';
     font-style: normal;
+    animation: showBlock 0.3s ease;
   }
 
   .payment_left,
@@ -355,6 +356,7 @@
     justify-content: center;
     align-items: center;
     background: rgba(82, 63, 46, 0.8);
+    animation: showBlock 0.3s ease;
   }
 
   .payment_popup_form {

@@ -539,7 +539,7 @@
     </div>
   </section>
 
-  <section class="parametrs quiz" id="quiz_8">
+  <section class="parametrs quiz" id="quiz_8" style="display:none;">
     <div class="parametrs_wrap">
       <h1 class="parametrs_header">Ваши параметры</h1>
       <ul class="parametrs_pagination">
@@ -583,19 +583,19 @@
     </div>
   </section>
 
-  <section class="analysis quiz" id="quiz_9">
+  <section class="analysis quiz" id="quiz_9" style="display:none;">
     <h1 class="analysis_header">Происходит анализ ваших данных</h1>
     <div class="analysis_content">
-      <div class="progress-bar">75%</div>
+      <div id="progressBar"></div>
       <ul class="checkpoints">
-        <li>Подсчитываем профиль питания</li>
-        <li>Рассчитываем количество еды</li>
-        <li>Выбираем подходящие рецепты</li>
-        <li>Составляем план питания</li>
+        <li><img src="img/loading.png" alt="" data-check="1">Подсчитываем профиль питания</li>
+        <li><img src="img/loading.png" alt="" data-check="2">Рассчитываем количество еды</li>
+        <li><img src="img/loading.png" alt="" data-check="3">Выбираем подходящие рецепты</li>
+        <li><img src="img/loading.png" alt="" data-check="4">Составляем план питания</li>
       </ul>
     </div>
   </section>
-  <section class="resume quiz" id="quiz_10">
+  <section class="resume quiz" id="quiz_10" style="display:none;">
     <a id="resume"></a>
     <h1 class="resume_header">Резюме вашего профиля</h1>
     <div class="resume_card-box">
@@ -946,14 +946,15 @@
     </div>
   </footer>
 
-
+  <script src='https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js'></script>
 
   <script src="js/quizQuestionMeat.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/quiz.js"></script>
-  <script src="js/quiz1.js"></script>
   <script src="js/resume.js"></script>
   <script src="js/review.js"></script>
+  <script src="js/progressBar.js"></script>
+
 
 </body>
 
