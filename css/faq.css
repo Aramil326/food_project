@@ -36,13 +36,13 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 4px #FB9333;
     border-radius: 20px;
-    -webkit-transition: all 0.3s ease;
+    -webkit-transition: all 0.5s ease;
     ;
-    -moz-transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
     ;
-    -o-transition: all 0.3s ease;
+    -o-transition: all 0.5s ease;
     ;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
 
   .faq_acordeon-box_item>h2 {
@@ -54,7 +54,9 @@
   }
 
   .faq_acordeon-box_item>p {
-    display: none;
+    /* display: none; */
+    overflow: hidden;
+    max-height: 0;
     width: 100%;
     font-weight: 400;
     font-size: 35px;
@@ -62,6 +64,7 @@
 
     line-height: 140%;
     letter-spacing: -0.02em;
+    transition: max-height 1s ease;
   }
 
   .faq_acordeon-box_item:hover {

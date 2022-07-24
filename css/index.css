@@ -5,6 +5,10 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .quiz-active {
