@@ -94,6 +94,13 @@
     margin-bottom: 30px;
     position: relative;
     padding-left: 40px;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
+    transition: all 0.3s ease;
   }
 
   .contact_form_checkbox input[type=checkbox] {

@@ -362,6 +362,34 @@ quiz8Inputs[3].addEventListener('change', (e) => {
   }
 })
 
+quiz8ButtonPrev.addEventListener('click', () => {
+  quizScreen7.style.display = 'flex'
+  quizScreen8.style.display = 'none'
+})
+
+quiz8ButtonNext.addEventListener('click', () => {
+  let flag = false
+  quiz8Inputs.forEach(input => {
+    if (!input.value) {
+      input.style.border = '1px solid red'
+      setTimeout(() => {
+        input.style.border = '1px solid #585858'
+      }, 1000)
+      flag = true
+    }
+  })
+  if (flag) {
+    quiz8Header.style.color = 'red'
+    setTimeout(() => {
+      quiz8Header.style.color = '#585858'
+    }, 1000);
+  } else {
+    quizScreen8.style.display = 'none'
+    quizScreen9.style.display = 'flex'
+    analysis()
+  }
+})
+
 function analysis() {
   var bar = new ProgressBar.Circle(progressBar, {
     color: '#2DC747',
@@ -426,33 +454,4 @@ function analysis() {
     quizScreen10.style.display = 'flex'
 
   }, 15000);
-
 }
-
-quiz8ButtonPrev.addEventListener('click', () => {
-  quizScreen7.style.display = 'flex'
-  quizScreen8.style.display = 'none'
-})
-
-quiz8ButtonNext.addEventListener('click', () => {
-  let flag = false
-  quiz8Inputs.forEach(input => {
-    if (!input.value) {
-      input.style.border = '1px solid red'
-      setTimeout(() => {
-        input.style.border = '1px solid #585858'
-      }, 1000)
-      flag = true
-    }
-  })
-  if (flag) {
-    quiz8Header.style.color = 'red'
-    setTimeout(() => {
-      quiz8Header.style.color = '#585858'
-    }, 1000);
-  } else {
-    quizScreen8.style.display = 'none'
-    quizScreen9.style.display = 'flex'
-    analysis()
-  }
-})
