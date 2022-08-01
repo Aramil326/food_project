@@ -564,9 +564,9 @@ function resumeUpdate() {
 
   let calories = document.querySelector('.calories')
   if (sex === 'man') {
-    calories.textContent = `${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) - 100}-${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) + 100}`
+    calories.textContent = `${((((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) - 100).toFixed(0)}-${((((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) + 100).toFixed(0)}`
   } else if (sex === 'woman') {
-    calories.textContent = `${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) - 100}-${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) + 100}`
+    calories.textContent = `${((((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) - 100).toFixed(0)}-${((((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) + 100).toFixed(0)}`
   }
 }
 
