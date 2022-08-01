@@ -22,9 +22,9 @@ if (!empty($recaptcha)) {
     $fMessage =  'Сообщение: ' . $_POST["message"] . ' <br />';
     $AllInOne =  $fMail . $fTitle . $fMessage;
     $to = 'ketotoday@yandex.ru';
-    $headers = "From:https://hardworking-beaver.ru <site@hardworking-beaver.ru>\nReply-to:ketotoday@yandex.ru\nContent-Type: text/html; charset=\"utf-8\"\n";
+    $headers = "From:https://keto-day.ru <keto-day.ru>\nReply-to:ketotoday@yandex.ru\nContent-Type: text/html; charset=\"utf-8\"\n";
     if (mail($to, 'Сообщение от пользователя', $AllInOne, $headers)) {
-      header('Refresh: 7; URL=https://keto-day/contact.html');
+      header('Refresh: 7; URL= https://keto-day.ru/contact.html');
       echo '
       <!DOCTYPE html>
       <html lang="en">
@@ -64,7 +64,7 @@ if (!empty($recaptcha)) {
       
       </html>';
     } else {
-      header('Refresh: 7; URL=https://keto-day/contact.html');
+      header('Refresh: 7; URL= https://keto-day.ru/contact.html');
       echo '<!DOCTYPE html>
       <html lang="en">
       
@@ -104,7 +104,7 @@ if (!empty($recaptcha)) {
       </html>';
     }
   } else {
-    header('Refresh: 7; URL=https://keto-day/contact.html');
+    header('Refresh: 7; URL= https://keto-day.ru/contact.html');
     echo '<!DOCTYPE html>
     <html lang="en">
     
@@ -143,7 +143,7 @@ if (!empty($recaptcha)) {
     </html>';
   }
 } else {
-  header('Refresh: 7; URL=https://keto-day/contact.html');
+  header('Refresh: 7; URL= https://keto-day.ru/contact.html');
   echo '<!DOCTYPE html>
   <html lang="en">
   

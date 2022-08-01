@@ -76,6 +76,7 @@ let quizQuestionsHeader = document.querySelector('.quiz_questions_header'),
 if (window.innerWidth <= 768) {
   questionsCards = document.querySelectorAll('.quiz_questions_card-box .card')
 }
+
 questionsCards.forEach((card, i) => {
   card.addEventListener('click', () => {
     questionsCards.forEach(card => {

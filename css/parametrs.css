@@ -299,7 +299,7 @@
   @media only screen and (max-width : 480px) {
     .parametrs {
       padding: 16px;
-      height: calc(100vh - 32px);
+      height: calc(100vh - 64px);
     }
 
     .parametrs_wrap {

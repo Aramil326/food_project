@@ -14,42 +14,42 @@ function isEmailValid(value) {
   return EMAIL_REGEXP.test(value)
 }
 
-contactEmail.addEventListener('change', (e) => {
-  if (isEmailValid(e.target.value)) {
-    e.target.style.outline = '1px solid green'
-    flag = true
-  } else {
-    e.target.style.outline = '1px solid red'
-    setTimeout(() => {
-      e.target.style.outline = ''
-      e.target.value = ''
-    }, 1000)
-  }
-})
+// contactEmail.addEventListener('change', (e) => {
+//   if (isEmailValid(e.target.value)) {
+//     e.target.style.outline = '1px solid green'
+//     flag = true
+//   } else {
+//     e.target.style.outline = '1px solid red'
+//     setTimeout(() => {
+//       e.target.style.outline = ''
+//       e.target.value = ''
+//     }, 1000)
+//   }
+// })
 
-contactTheme.addEventListener('change', (e) => {
-  if (e.target.value) {
-    e.target.style.outline = '1px solid green'
-  } else {
-    e.target.style.outline = '1px solid red'
-    setTimeout(() => {
-      e.target.style.outline = ''
-    }, 1000)
-  }
-})
+// contactTheme.addEventListener('change', (e) => {
+//   if (e.target.value) {
+//     e.target.style.outline = '1px solid green'
+//   } else {
+//     e.target.style.outline = '1px solid red'
+//     setTimeout(() => {
+//       e.target.style.outline = ''
+//     }, 1000)
+//   }
+// })
 
-contactMessage.addEventListener('change', (e) => {
-  if (e.target.value) {
-    e.target.style.outline = '1px solid green'
-  } else {
-    e.target.style.outline = '1px solid red'
-    setTimeout(() => {
-      e.target.style.outline = ''
-    }, 1000)
-  }
-})
+// contactMessage.addEventListener('change', (e) => {
+//   if (e.target.value) {
+//     e.target.style.outline = '1px solid green'
+//   } else {
+//     e.target.style.outline = '1px solid red'
+//     setTimeout(() => {
+//       e.target.style.outline = ''
+//     }, 1000)
+//   }
+// })
 
-contactButton.addEventListener('click', (e) => {
+contactButton.addEventListener('submit', (e) => {
   let flag = false
   contactInputs.forEach(input => {
     if (!input.value) {
