@@ -1,4 +1,3 @@
-@media only screen and (max-width : 1920px) {
   .answer {
     height: 100vh;
     display: flex;
@@ -40,29 +39,28 @@
     letter-spacing: -0.02em;
     color: #585858;
   }
-}
 
-@media only screen and (max-width : 1440px) {
-  .answer {
-    padding-bottom: 50px;
-    /* background-size: cover; */
+  @media only screen and (max-width : 1440px) {
+    .answer {
+      padding-bottom: 50px;
+      /* background-size: cover; */
+    }
+
+    .answer_wrap {
+      padding: 4%;
+    }
   }
 
-  .answer_wrap {
-    padding: 4%;
+  @media only screen and (max-width : 1024px) {}
+
+  @media only screen and (max-width : 768px) {}
+
+  @media only screen and (max-width : 480px) {
+    .answer {
+      padding: 16px;
+    }
+
+    .answer_wrap {
+      width: 100%;
+    }
   }
-}
-
-@media only screen and (max-width : 1024px) {}
-
-@media only screen and (max-width : 768px) {}
-
-@media only screen and (max-width : 480px) {
-  .answer {
-    padding: 16px;
-  }
-
-  .answer_wrap {
-    width: 100%;
-  }
-}

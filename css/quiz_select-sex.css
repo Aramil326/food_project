@@ -1,4 +1,3 @@
-@media only screen and (max-width : 1920px) {
   .quiz_select-sex {
     padding: 100px 130px;
     font-family: 'Montserrat';
@@ -212,187 +211,186 @@
   .next {
     background: #FB9333;
   }
-}
 
-@media only screen and (max-width : 1440px) {
-  .quiz_select-sex {
-    padding: 50px;
+  @media only screen and (max-width : 1440px) {
+    .quiz_select-sex {
+      padding: 50px;
+    }
+
+    .quiz_select-sex_card-box_card {
+      height: 473.23px;
+    }
   }
 
-  .quiz_select-sex_card-box_card {
-    height: 473.23px;
-  }
-}
+  @media only screen and (max-width : 1366px) {
+    .quiz_select-sex_pagination>li {
+      height: 10px;
+    }
 
-@media only screen and (max-width : 1366px) {
-  .quiz_select-sex_pagination>li {
-    height: 10px;
-  }
+    .quiz_select-sex {
+      padding: 30px 40px;
+    }
 
-  .quiz_select-sex {
-    padding: 30px 40px;
-  }
+    .quiz_select-sex_header {
+      font-size: calc(14px + 41 * (100vw / 1920));
+    }
 
-  .quiz_select-sex_header {
-    font-size: calc(14px + 41 * (100vw / 1920));
-  }
+    .quiz_select-sex_pagination {
+      margin-bottom: 25px;
+    }
 
-  .quiz_select-sex_pagination {
-    margin-bottom: 25px;
-  }
+    .quiz_select-sex_card-box {
+      margin-bottom: 25px;
+    }
 
-  .quiz_select-sex_card-box {
-    margin-bottom: 25px;
-  }
+    .quiz_select-sex_card-box_card {
+      height: 279.94px;
+    }
 
-  .quiz_select-sex_card-box_card {
-    height: 279.94px;
-  }
+    .quiz_select-sex_title {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: calc(14px + 34 * (100vw / 1920));
+    }
 
-  .quiz_select-sex_title {
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: calc(14px + 34 * (100vw / 1920));
-  }
+    .apple {
+      width: 15%;
+    }
 
-  .apple {
-    width: 15%;
-  }
+    .cherry {
+      width: 15%;
+    }
 
-  .cherry {
-    width: 15%;
-  }
+    .mango {
+      width: 15%;
+    }
 
-  .mango {
-    width: 15%;
-  }
+    .grape {
+      width: 15%;
+    }
 
-  .grape {
-    width: 15%;
-  }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .previous,
-  .next {
-    padding: 10px 60px;
-    font-weight: 500;
-    font-size: calc(14px + 1 * (100vw / 1920));
-  }
-}
-
-@media only screen and (max-width : 1024px) {}
-
-
-@media only screen and (max-width : 768px) {
-  .quiz_select-sex {
-    padding: 34px;
-    height: calc(100vh - 68px);
-    justify-content: space-between;
+    .previous,
+    .next {
+      padding: 10px 60px;
+      font-weight: 500;
+      font-size: calc(14px + 1 * (100vw / 1920));
+    }
   }
 
-  .quiz_select-sex_wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 154px;
+  @media only screen and (max-width : 1024px) {}
+
+
+  @media only screen and (max-width : 768px) {
+    .quiz_select-sex {
+      padding: 34px;
+      height: calc(100vh - 68px);
+      justify-content: space-between;
+    }
+
+    .quiz_select-sex_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 154px;
+    }
+
+    .quiz_select-sex_header {
+      margin-bottom: 40px;
+      font-size: calc(16px + 40 * (100vw / 1920));
+    }
+
+    .quiz_select-sex_pagination {
+      margin: 0;
+    }
+
+    .quiz_select-sex_pagination>li {
+      width: 12%;
+    }
+
+    .quiz_select-sex_pagination>li:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    .quiz_select-sex_card-box {
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    .quiz_select-sex_card-box_card {
+      height: 324px;
+      width: 49%;
+    }
+
+    .quiz_select-sex_card-box_card>img:first-of-type {
+      height: 70%;
+    }
+
+    .buttons {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .previous {
+      margin-right: 10px;
+    }
+
+    .previous,
+    .next {
+      width: 50%;
+      padding: 24px 48px;
+      border-radius: 80px;
+      font-size: calc(8px + 8 * (100vw / 768));
+      line-height: 130%;
+    }
+
+    .next {
+      margin-left: 10px;
+    }
   }
 
-  .quiz_select-sex_header {
-    margin-bottom: 40px;
-    font-size: calc(16px + 40 * (100vw / 1920));
+
+
+  @media only screen and (max-width : 480px) {
+    .quiz_select-sex {
+      padding: 16px;
+      height: calc(100vh - 32px);
+    }
+
+    .quiz_select-sex_header {
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+
+    .quiz_select-sex_wrap {
+      height: 125px;
+    }
+
+    .quiz_select-sex_card-box_card {
+      height: 148px;
+    }
+
+    .quiz_select-sex_title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .previous {
+      margin-right: 8px;
+    }
+
+    .previous,
+    .next {
+      padding: 16px 36px;
+      font-size: 12px;
+    }
+
+    .next {
+      margin-left: 8px;
+    }
   }
-
-  .quiz_select-sex_pagination {
-    margin: 0;
-  }
-
-  .quiz_select-sex_pagination>li {
-    width: 12%;
-  }
-
-  .quiz_select-sex_pagination>li:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .quiz_select-sex_card-box {
-    justify-content: space-between;
-    margin: 0;
-  }
-
-  .quiz_select-sex_card-box_card {
-    height: 324px;
-    width: 49%;
-  }
-
-  .quiz_select-sex_card-box_card>img:first-of-type {
-    height: 70%;
-  }
-
-  .buttons {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .previous {
-    margin-right: 10px;
-  }
-
-  .previous,
-  .next {
-    width: 50%;
-    padding: 24px 48px;
-    border-radius: 80px;
-    font-size: calc(8px + 8 * (100vw / 768));
-    line-height: 130%;
-  }
-
-  .next {
-    margin-left: 10px;
-  }
-}
-
-
-
-@media only screen and (max-width : 480px) {
-  .quiz_select-sex {
-    padding: 16px;
-    height: calc(100vh - 32px);
-  }
-
-  .quiz_select-sex_header {
-    font-size: 22px;
-    margin-bottom: 24px;
-  }
-
-  .quiz_select-sex_wrap {
-    height: 125px;
-  }
-
-  .quiz_select-sex_card-box_card {
-    height: 148px;
-  }
-
-  .quiz_select-sex_title {
-    font-weight: 600;
-    font-size: 20px;
-  }
-
-  .previous {
-    margin-right: 8px;
-  }
-
-  .previous,
-  .next {
-    padding: 16px 36px;
-    font-size: 12px;
-  }
-
-  .next {
-    margin-left: 8px;
-  }
-}

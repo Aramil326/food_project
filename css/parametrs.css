@@ -1,4 +1,3 @@
-@media only screen and (max-width : 1920px) {
   .parametrs {
     padding: 100px 130px;
     font-family: 'Montserrat';
@@ -146,196 +145,195 @@
   .parametrs_form_input:not(:last-child) {
     margin-bottom: 36px;
   }
-}
 
-@media only screen and (max-width : 1440px) {
-  .parametrs {
-    padding: 50px;
+  @media only screen and (max-width : 1440px) {
+    .parametrs {
+      padding: 50px;
+    }
+
+    .parametrs_form_input:not(:last-child) {
+      margin-bottom: 33.2px;
+    }
   }
 
-  .parametrs_form_input:not(:last-child) {
-    margin-bottom: 33.2px;
-  }
-}
+  @media only screen and (max-width : 1366px) {
+    .parametrs {
+      padding: 30px 40px;
+    }
 
-@media only screen and (max-width : 1366px) {
-  .parametrs {
-    padding: 30px 40px;
-  }
+    .parametrs_header {
+      font-size: calc(14px + 41 * (100vw / 1920));
+    }
 
-  .parametrs_header {
-    font-size: calc(14px + 41 * (100vw / 1920));
-  }
+    .parametrs_pagination {
+      margin-bottom: 25px;
+    }
 
-  .parametrs_pagination {
-    margin-bottom: 25px;
-  }
+    .parametrs_pagination>li {
+      height: 10px;
+    }
 
-  .parametrs_pagination>li {
-    height: 10px;
-  }
+    .parametrs_form {
+      padding: 30px 30px;
+      margin-bottom: 25px;
+    }
 
-  .parametrs_form {
-    padding: 30px 30px;
-    margin-bottom: 25px;
-  }
+    .parametrs_form_input {
+      padding: 10px 10px 10px 73px;
+      font-weight: 300;
+      font-size: 19px;
+    }
 
-  .parametrs_form_input {
-    padding: 10px 10px 10px 73px;
-    font-weight: 300;
-    font-size: 19px;
-  }
+    .parametrs_form_input:nth-child(1) {
+      background: url(../img/calendar.png) no-repeat;
+      background-position: 20px;
+      background-size: 30px 30px;
+    }
 
-  .parametrs_form_input:nth-child(1) {
-    background: url(../img/calendar.png) no-repeat;
-    background-position: 20px;
-    background-size: 30px 30px;
-  }
+    .parametrs_form_input:nth-child(2) {
+      background: url(../img/bad-weight.png) no-repeat;
+      background-position: 20px;
+      background-size: 30px 30px;
+    }
 
-  .parametrs_form_input:nth-child(2) {
-    background: url(../img/bad-weight.png) no-repeat;
-    background-position: 20px;
-    background-size: 30px 30px;
-  }
+    .parametrs_form_input:nth-child(3) {
+      background: url(../img/growth.png) no-repeat;
+      background-position: 20px;
+      background-size: 30px 30px;
+    }
 
-  .parametrs_form_input:nth-child(3) {
-    background: url(../img/growth.png) no-repeat;
-    background-position: 20px;
-    background-size: 30px 30px;
-  }
+    .parametrs_form_input:nth-child(4) {
+      background: url(../img/good-weight.png) no-repeat;
+      background-position: 20px;
+      background-size: 30px 30px;
+    }
 
-  .parametrs_form_input:nth-child(4) {
-    background: url(../img/good-weight.png) no-repeat;
-    background-position: 20px;
-    background-size: 30px 30px;
-  }
+    .parametrs_form_input::placeholder {
+      font-weight: 300;
+      font-size: 19px;
+    }
 
-  .parametrs_form_input::placeholder {
-    font-weight: 300;
-    font-size: 19px;
-  }
-
-  .parametrs_form_input:not(:last-child) {
-    margin-bottom: 15px;
-  }
-}
-
-@media only screen and (max-width : 1024px) {}
-
-@media only screen and (max-width : 768px) {
-  .parametrs {
-    padding: 34px;
-    height: calc(100vh - 68px);
-    justify-content: space-between;
+    .parametrs_form_input:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
-  .parametrs_header {
-    margin-bottom: 40px;
-    font-size: calc(16px + 40 * (100vw / 1920));
+  @media only screen and (max-width : 1024px) {}
+
+  @media only screen and (max-width : 768px) {
+    .parametrs {
+      padding: 34px;
+      height: calc(100vh - 68px);
+      justify-content: space-between;
+    }
+
+    .parametrs_header {
+      margin-bottom: 40px;
+      font-size: calc(16px + 40 * (100vw / 1920));
+    }
+
+    .parametrs_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      height: 154px;
+    }
+
+    .parametrs_pagination {
+      margin: 0;
+    }
+
+    .parametrs_pagination>li:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    .parametrs_pagination>li {
+      width: 12%;
+    }
+
+    .parametrs_form {
+      margin: 0;
+      padding: 40px 40px;
+    }
+
+    .parametrs_form_input {
+      width: calc(100% - 83px);
+      padding: 20px 20px 20px 73px;
+      font-weight: 400;
+      font-size: calc(12px + 8 * (100vw / 768));
+
+    }
+
+    .parametrs_form_input::placeholder {
+      font-weight: 400;
+      font-size: calc(12px + 8 * (100vw / 768));
+
+    }
+
+    .parametrs_form_input:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .parametrs_form_input:nth-child(1) {
+      background-position: 15px;
+      background-size: 10%;
+    }
+
+    .parametrs_form_input:nth-child(2) {
+      background-position: 15px;
+      background-size: 10%;
+    }
+
+    .parametrs_form_input:nth-child(3) {
+      background-position: 15px;
+      background-size: 10%;
+    }
+
+    .parametrs_form_input:nth-child(4) {
+      background-position: 15px;
+      background-size: 10%;
+    }
   }
 
-  .parametrs_wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 154px;
+  @media only screen and (max-width : 480px) {
+    .parametrs {
+      padding: 16px;
+      height: calc(100vh - 32px);
+    }
+
+    .parametrs_wrap {
+      margin-bottom: 16px;
+      height: 125px;
+    }
+
+    .parametrs_header {
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+
+    .parametrs_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+
+    .parametrs_form_input:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .parametrs_form_input {
+      padding: 14px 0 14px 20%;
+      width: 60%;
+    }
   }
 
-  .parametrs_pagination {
-    margin: 0;
+  @media only screen and (max-width : 320px) {
+    .parametrs_header {
+      font-size: 15px;
+    }
   }
-
-  .parametrs_pagination>li:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .parametrs_pagination>li {
-    width: 12%;
-  }
-
-  .parametrs_form {
-    margin: 0;
-    padding: 40px 40px;
-  }
-
-  .parametrs_form_input {
-    width: calc(100% - 83px);
-    padding: 20px 20px 20px 73px;
-    font-weight: 400;
-    font-size: calc(12px + 8 * (100vw / 768));
-
-  }
-
-  .parametrs_form_input::placeholder {
-    font-weight: 400;
-    font-size: calc(12px + 8 * (100vw / 768));
-
-  }
-
-  .parametrs_form_input:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .parametrs_form_input:nth-child(1) {
-    background-position: 15px;
-    background-size: 10%;
-  }
-
-  .parametrs_form_input:nth-child(2) {
-    background-position: 15px;
-    background-size: 10%;
-  }
-
-  .parametrs_form_input:nth-child(3) {
-    background-position: 15px;
-    background-size: 10%;
-  }
-
-  .parametrs_form_input:nth-child(4) {
-    background-position: 15px;
-    background-size: 10%;
-  }
-}
-
-@media only screen and (max-width : 480px) {
-  .parametrs {
-    padding: 16px;
-    height: calc(100vh - 32px);
-  }
-
-  .parametrs_wrap {
-    margin-bottom: 16px;
-    height: 125px;
-  }
-
-  .parametrs_header {
-    font-size: 22px;
-    margin-bottom: 24px;
-  }
-
-  .parametrs_form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    border-radius: 10px;
-  }
-
-  .parametrs_form_input:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .parametrs_form_input {
-    padding: 14px 0 14px 20%;
-    width: 60%;
-  }
-}
-
-@media only screen and (max-width : 320px) {
-  .parametrs_header {
-    font-size: 15px;
-  }
-}
