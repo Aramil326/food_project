@@ -20,6 +20,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <title>KETO-DAY</title>
 </head>
 
@@ -47,32 +50,35 @@
   <section class="contact">
     <h1>Контакты</h1>
     <div class="contact_form">
-      <p class="contact_form_title">
-        Ваш e-mail
-      </p>
-      <input type="e-mail" class="contact_form_input" placeholder="ivan_ivanov@mail.ru">
+      <form action="send.php" method="post">
+        <p class="contact_form_title">
+          Ваш e-mail
+        </p>
+        <input type="e-mail" name="email" class="contact_form_input" placeholder="ivan_ivanov@mail.ru">
 
-      <p class="contact_form_title">
-        Тема вашего обращения
-      </p>
-      <input type="text" class="contact_form_input">
+        <p class="contact_form_title">
+          Тема вашего обращения
+        </p>
+        <input type="text" name="title" class="contact_form_input">
 
-      <p class="contact_form_title">
-        Ваше обращение
-      </p>
-      <textarea type="text" class="contact_form_input_message"></textarea>
+        <p class="contact_form_title">
+          Ваше обращение
+        </p>
+        <textarea type="text" name="message" class="contact_form_input_message"></textarea>
 
-      <div class="contact_form_checkbox">
-        <input type="checkbox" id="contact_form">
-        <label for="contact_form">
-          <p>Направляя сообщение через форму на этой странице, я ознакомился и безоговорочно соглашаюсь с <a
-              href="#">политикой конфиденциальности</a> и даю <a href="#">согласие</a> на обработку персональных данных.
-          </p>
-        </label>
-      </div>
-
-      <button class="contact_form_button">Отправить
-      </button>
+        <div class="contact_form_checkbox">
+          <input type="checkbox" id="contact_form">
+          <label for="contact_form">
+            <p>Направляя сообщение через форму на этой странице, я ознакомился и безоговорочно соглашаюсь с <a
+                href="#">политикой конфиденциальности</a> и даю <a href="#">согласие</a> на обработку персональных
+              данных.
+            </p>
+          </label>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6Lcf4SohAAAAALIRLpKs9st4dQ9rHcRX2o3W_MhX"></div>
+        <button type="submit" class="contact_form_button">Отправить
+        </button>
+      </form>
     </div>
 
 

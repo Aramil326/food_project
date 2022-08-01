@@ -1,0 +1,68 @@
+@media only screen and (max-width : 1920px) {
+  .answer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    background-image: url(../img/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .answer_wrap {
+    padding: 50px;
+    width: 80%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px #FB9333;
+    border-radius: 20px;
+  }
+
+  .answer_wrap>h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: calc(16px + 24 * (100vw / 768));
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #585858;
+  }
+
+  .answer_wrap>h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: calc(16px + 14 * (100vw / 768));
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #585858;
+  }
+}
+
+@media only screen and (max-width : 1440px) {
+  .answer {
+    padding-bottom: 50px;
+    /* background-size: cover; */
+  }
+
+  .answer_wrap {
+    padding: 4%;
+  }
+}
+
+@media only screen and (max-width : 1024px) {}
+
+@media only screen and (max-width : 768px) {}
+
+@media only screen and (max-width : 480px) {
+  .answer {
+    padding: 16px;
+  }
+
+  .answer_wrap {
+    width: 100%;
+  }
+}

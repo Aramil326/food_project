@@ -231,7 +231,7 @@
 
   .parametrs_header {
     margin-bottom: 40px;
-    font-size: calc(16px + 50 * (100vw / 1920));
+    font-size: calc(16px + 40 * (100vw / 1920));
   }
 
   .parametrs_wrap {
@@ -301,7 +301,7 @@
 @media only screen and (max-width : 480px) {
   .parametrs {
     padding: 16px;
-    height: calc(100vh - 32px + 71px);
+    height: calc(100vh - 32px);
   }
 
   .parametrs_wrap {

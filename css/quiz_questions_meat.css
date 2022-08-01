@@ -189,10 +189,11 @@
 
   .quiz_questions_meat_header {
     margin-bottom: 40px;
-    font-size: calc(16px + 50 * (100vw / 1920));
+    font-size: calc(16px + 30 * (100vw / 1920));
   }
 
   .quiz_questions_meat_wrap {
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,7 +284,7 @@
 @media only screen and (max-width : 480px) {
   .quiz_questions_meat {
     padding: 16px;
-    height: calc(100vh - 32px + 71px);
+    height: calc(100vh - 32px);
   }
 
   .quiz_questions_meat_wrap {
