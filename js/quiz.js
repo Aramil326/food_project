@@ -504,8 +504,8 @@ function resumeUpdate() {
     imtSubtitle = document.querySelector('.resume_imt_subtitle'),
     metabolicAge
 
-  height = height / 100
-  imt.textContent = Math.round(currentWeight / (height * height))
+  height = +height / 100
+  imt.textContent = (currentWeight / (height * height)).toFixed(2)
 
   if (imt.textContent < 18.5) {
     imtImg.src = 'img/scale-1.png'
@@ -560,7 +560,13 @@ function resumeUpdate() {
   }
 
   // --------------------------------------------------------------
-  console.log(activityCoefficient)
+  height = height * 100
 
+  let calories = document.querySelector('.calories')
+  if (sex === 'man') {
+    calories.textContent = `${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) - 100}-${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5) * activityCoefficient) + 100}`
+  } else if (sex === 'woman') {
+    calories.textContent = `${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) - 100}-${(((10 * currentWeight) + (6.25 * height) - (5 * age) + 5 - 161) * activityCoefficient) + 100}`
+  }
 }
 
