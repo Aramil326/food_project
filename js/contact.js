@@ -6,7 +6,8 @@ const contactHeader = document.querySelector('.contact h1'),
 contactAgree = document.querySelector('input[type="checkbox"]'),
   contactButton = document.querySelector('.contact_form_button'),
   EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu,
-  contactInputs = [contactEmail, contactTheme, contactMessage]
+  contactInputs = [contactEmail, contactTheme, contactMessage],
+  contactForm = document.querySelector('.contact_form form')
 
 let flag = false
 
@@ -14,42 +15,42 @@ function isEmailValid(value) {
   return EMAIL_REGEXP.test(value)
 }
 
-// contactEmail.addEventListener('change', (e) => {
-//   if (isEmailValid(e.target.value)) {
-//     e.target.style.outline = '1px solid green'
-//     flag = true
-//   } else {
-//     e.target.style.outline = '1px solid red'
-//     setTimeout(() => {
-//       e.target.style.outline = ''
-//       e.target.value = ''
-//     }, 1000)
-//   }
-// })
+contactEmail.addEventListener('change', (e) => {
+  if (isEmailValid(e.target.value)) {
+    e.target.style.outline = '1px solid green'
+    flag = true
+  } else {
+    e.target.style.outline = '1px solid red'
+    setTimeout(() => {
+      e.target.style.outline = ''
+      e.target.value = ''
+    }, 1000)
+  }
+})
 
-// contactTheme.addEventListener('change', (e) => {
-//   if (e.target.value) {
-//     e.target.style.outline = '1px solid green'
-//   } else {
-//     e.target.style.outline = '1px solid red'
-//     setTimeout(() => {
-//       e.target.style.outline = ''
-//     }, 1000)
-//   }
-// })
+contactTheme.addEventListener('change', (e) => {
+  if (e.target.value) {
+    e.target.style.outline = '1px solid green'
+  } else {
+    e.target.style.outline = '1px solid red'
+    setTimeout(() => {
+      e.target.style.outline = ''
+    }, 1000)
+  }
+})
 
-// contactMessage.addEventListener('change', (e) => {
-//   if (e.target.value) {
-//     e.target.style.outline = '1px solid green'
-//   } else {
-//     e.target.style.outline = '1px solid red'
-//     setTimeout(() => {
-//       e.target.style.outline = ''
-//     }, 1000)
-//   }
-// })
+contactMessage.addEventListener('change', (e) => {
+  if (e.target.value) {
+    e.target.style.outline = '1px solid green'
+  } else {
+    e.target.style.outline = '1px solid red'
+    setTimeout(() => {
+      e.target.style.outline = ''
+    }, 1000)
+  }
+})
 
-contactButton.addEventListener('submit', (e) => {
+contactButton.addEventListener('click', (e) => {
   let flag = false
   contactInputs.forEach(input => {
     if (!input.value) {
@@ -69,6 +70,7 @@ contactButton.addEventListener('submit', (e) => {
     contactEmail.value = ''
     contactTheme.value = ''
     contactMessage.value = ''
+    contactForm.submit()
   } else if (!contactAgree.checked) {
     contactFormCheckbox.style.outline = '1px solid red'
     setTimeout(() => {
