@@ -27,7 +27,7 @@ if (!empty($recaptcha)) {
       header('Refresh: 7; URL= https://keto-day.ru/contact.html');
       echo '
       <!DOCTYPE html>
-      <html lang="en">
+      <html lang="ru">
       
       <head>
         <meta charset="UTF-8">
@@ -66,7 +66,7 @@ if (!empty($recaptcha)) {
     } else {
       header('Refresh: 7; URL= https://keto-day.ru/contact.html');
       echo '<!DOCTYPE html>
-      <html lang="en">
+      <html lang="ru">
       
       <head>
         <meta charset="UTF-8">
@@ -106,7 +106,7 @@ if (!empty($recaptcha)) {
   } else {
     header('Refresh: 7; URL= https://keto-day.ru/contact.html');
     echo '<!DOCTYPE html>
-    <html lang="en">
+    <html lang="ru">
     
     <head>
       <meta charset="UTF-8">
@@ -145,7 +145,7 @@ if (!empty($recaptcha)) {
 } else {
   header('Refresh: 7; URL= https://keto-day.ru/contact.html');
   echo '<!DOCTYPE html>
-  <html lang="en">
+  <html lang="ru">
   
   <head>
     <meta charset="UTF-8">
