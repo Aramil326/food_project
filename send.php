@@ -35,7 +35,7 @@ if (!empty($recaptcha)) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link rel="stylesheet" href="css/reset.css">
       
         <!-- Стили секций -->
         <link rel="stylesheet" href="css/answer.css">
@@ -74,7 +74,7 @@ if (!empty($recaptcha)) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
         <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <link rel="stylesheet" href="css/reset.css">
       
         <!-- Стили секций -->
         <link rel="stylesheet" href="css/answer.css">
@@ -114,7 +114,7 @@ if (!empty($recaptcha)) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
       <link rel="stylesheet" href="css/index.css">
-      <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+      <link rel="stylesheet" href="css/reset.css">
     
       <!-- Стили секций -->
       <link rel="stylesheet" href="css/answer.css">
@@ -153,7 +153,7 @@ if (!empty($recaptcha)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
   
     <!-- Стили секций -->
     <link rel="stylesheet" href="css/answer.css">

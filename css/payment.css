@@ -16,7 +16,7 @@
 
 .payment_left {
   position: relative;
-  background-image: url(../img/payment_left_bg.jpg);
+  background-image: url(../img/payment_left_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
