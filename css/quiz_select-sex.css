@@ -232,7 +232,7 @@
     }
 
     .quiz_select-sex_header {
-      font-size: calc(14px + 41 * (100vw / 1920));
+      font-size: calc(14px + 35 * (100vw / 1920));
     }
 
     .quiz_select-sex_pagination {

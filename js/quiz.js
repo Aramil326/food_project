@@ -58,6 +58,11 @@ quiz1ButtonNext.addEventListener('click', () => {
     console.log('alert')
     quizScreen1.style.display = 'none'
     quizScreen2.style.display = 'flex'
+    if (window.innerWidth <= 768) {
+      document.querySelector('#quiz_2').scrollIntoView(true)
+    } else {
+      document.querySelector('#quiz_2 .quiz_questions_header').scrollIntoView(true)
+    }
   } else {
     quizSelectSexHeader.style.color = 'red'
     setTimeout(() => {
@@ -108,6 +113,11 @@ questionsCards.forEach((card, i) => {
 quiz2ButtonPrev.addEventListener('click', () => {
   quizScreen1.style.display = 'flex'
   quizScreen2.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_1').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_1 .quiz_select-sex_header').scrollIntoView(true)
+  }
 })
 
 quiz2ButtonNext.addEventListener('click', () => {
@@ -116,6 +126,11 @@ quiz2ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen2.style.display = 'none'
       quizScreen3.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_3').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_3 .quiz_questions_meat_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -153,6 +168,11 @@ quiz3Cards.forEach(card => {
 quiz3ButtonPrev.addEventListener('click', () => {
   quizScreen2.style.display = 'flex'
   quizScreen3.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_2').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_2 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz3ButtonNext.addEventListener('click', () => {
@@ -161,6 +181,11 @@ quiz3ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen3.style.display = 'none'
       quizScreen4.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_4').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_4 .quiz_questions_meat_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -197,6 +222,11 @@ quiz4Cards.forEach(card => {
 quiz4ButtonPrev.addEventListener('click', () => {
   quizScreen3.style.display = 'flex'
   quizScreen4.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_3').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_3 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz4ButtonNext.addEventListener('click', () => {
@@ -205,6 +235,11 @@ quiz4ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen4.style.display = 'none'
       quizScreen5.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_5').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_5 .quiz_questions_meat_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -241,6 +276,11 @@ quiz5Cards.forEach(card => {
 quiz5ButtonPrev.addEventListener('click', () => {
   quizScreen4.style.display = 'flex'
   quizScreen5.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_4').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_4 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz5ButtonNext.addEventListener('click', () => {
@@ -249,6 +289,11 @@ quiz5ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen5.style.display = 'none'
       quizScreen6.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_6').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_6 .quiz_questions_meat_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -285,6 +330,11 @@ quiz6Cards.forEach(card => {
 quiz6ButtonPrev.addEventListener('click', () => {
   quizScreen5.style.display = 'flex'
   quizScreen6.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_5').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_5 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz6ButtonNext.addEventListener('click', () => {
@@ -293,6 +343,11 @@ quiz6ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen6.style.display = 'none'
       quizScreen7.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_7').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_7 .quiz_questions_meat_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -329,6 +384,11 @@ quiz7Cards.forEach(card => {
 quiz7ButtonPrev.addEventListener('click', () => {
   quizScreen6.style.display = 'flex'
   quizScreen7.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_6').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_6 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz7ButtonNext.addEventListener('click', () => {
@@ -337,6 +397,11 @@ quiz7ButtonNext.addEventListener('click', () => {
     if (card.classList.contains('quiz-active')) {
       quizScreen7.style.display = 'none'
       quizScreen8.style.display = 'flex'
+      if (window.innerWidth <= 768) {
+        document.querySelector('#quiz_8').scrollIntoView(true)
+      } else {
+        document.querySelector('#quiz_8 .parametrs_header').scrollIntoView(true)
+      }
     } else {
       flag = true
     }
@@ -412,6 +477,11 @@ quiz8Inputs[3].addEventListener('change', (e) => {
 quiz8ButtonPrev.addEventListener('click', () => {
   quizScreen7.style.display = 'flex'
   quizScreen8.style.display = 'none'
+  if (window.innerWidth <= 768) {
+    document.querySelector('#quiz_7').scrollIntoView(true)
+  } else {
+    document.querySelector('#quiz_7 .quiz_questions_meat_header').scrollIntoView(true)
+  }
 })
 
 quiz8ButtonNext.addEventListener('click', () => {
@@ -433,6 +503,11 @@ quiz8ButtonNext.addEventListener('click', () => {
   } else {
     quizScreen8.style.display = 'none'
     quizScreen9.style.display = 'flex'
+    if (window.innerWidth <= 768) {
+      document.querySelector('#quiz_9').scrollIntoView(true)
+    } else {
+      document.querySelector('#quiz_9 .analysis_header').scrollIntoView(true)
+    }
     analysis()
   }
 })
@@ -494,7 +569,11 @@ function analysis() {
   setTimeout(() => {
     quizScreen9.style.display = 'none'
     quizScreen10.style.display = 'flex'
-
+    if (window.innerWidth <= 768) {
+      document.querySelector('#quiz_10').scrollIntoView(true)
+    } else {
+      document.querySelector('#quiz_10 .resume_header').scrollIntoView(true)
+    }
   }, 15000);
   resumeUpdate()
 }

@@ -115,7 +115,11 @@
 
   @media only screen and (max-width : 1024px) {
     .header_nav>li>a {
-      font-size: calc(14px + 5 * (100vw / 1920));
+      font-size: calc(12px + 1 * (100vw / 1920));
+    }
+
+    .header_nav>li:not(:last-child) {
+      margin-right: 10px;
     }
 
     .header_contact-us {
