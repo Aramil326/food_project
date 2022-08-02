@@ -138,8 +138,10 @@
 
     footer>p {
       width: 75%;
+      text-align: inherit;
       margin-bottom: 34px;
     }
+
 
     .footer_payment {
       margin-bottom: 34px;
@@ -149,6 +151,10 @@
 
     .footer_payment_img {
       justify-content: flex-start;
+    }
+
+    .footer_nav {
+      width: auto;
     }
 
     .footer_nav>li:nth-of-type(1),
@@ -200,6 +206,10 @@
 
     .footer_nav>li:not(:last-of-type) {
       margin-bottom: 16px;
+    }
+
+    .footer_nav>li {
+      text-align: center;
     }
 
     .footer_nav>li>a {

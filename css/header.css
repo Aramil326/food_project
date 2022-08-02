@@ -164,6 +164,10 @@
       width: 100%;
     }
 
+    .header_nav>li {
+      text-align: center;
+    }
+
     .header_nav>li>a {
       font-weight: 500;
       font-size: 24px;
