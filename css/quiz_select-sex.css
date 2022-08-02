@@ -359,7 +359,7 @@
   @media only screen and (max-width : 480px) {
     .quiz_select-sex {
       padding: 16px;
-      height: calc(100vh - 64px);
+      height: calc(100vh - 32px);
     }
 
     .quiz_select-sex_header {
