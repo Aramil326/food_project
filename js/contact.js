@@ -67,10 +67,6 @@ contactButton.addEventListener('click', (e) => {
 
   if (contactAgree.checked && !flag) {
     console.log('отправлено')
-    contactEmail.value = ''
-    contactTheme.value = ''
-    contactMessage.value = ''
-    contactForm.submit()
   } else if (!contactAgree.checked) {
     contactFormCheckbox.style.outline = '1px solid red'
     setTimeout(() => {
