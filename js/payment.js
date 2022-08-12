@@ -155,7 +155,7 @@ this.pay = function () {
   }; //создание ежемесячной подписки
 
   widget.charge({ // options
-    publicId: 'test_api_00000000000000000000001', //id из личного кабинета
+    publicId: 'pk_355e92e25b49ffba13d15a86f9842', //id из личного кабинета
     description: 'Подписка на получение индивидуального плана кето-диеты от KETO-DAY', //назначение
     amount: 28.00, //сумма
     currency: 'RUB', //валюта
