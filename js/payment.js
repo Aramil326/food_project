@@ -1,13 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const closeButton = document.querySelector('.payment_popup_form_close'),
-    paymentPopupForm = document.querySelector('.payment_popup_form'),
-    paymentPopup = document.querySelector('.payment_popup'),
-    paymentRight = document.querySelector('.payment_right')
-
-  closeButton.addEventListener('click', () => {
-    paymentPopup.style.display = 'none';
-    paymentRight.scrollIntoView()
-  })
+    paymentPopupForm = document.querySelector('.payment_popup_form')
 
   // Меняем изображение закрытия
   if (window.innerWidth <= 480) {
@@ -43,8 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu,
     paymentButton = document.querySelector('.payment_right_button'),
     paymentAgree1Checkbox = document.querySelector('.payment_right_agree1 input[type="checkbox"]'),
-    paymentAgree2Checkbox = document.querySelector('.payment_right_agree2 input[type="checkbox"]'),
-    paymentPopupFormInput = document.querySelector('.payment_popup_form_card-number_input[placeholder="ivanov_ivan@mail.ru"]')
+    paymentAgree2Checkbox = document.querySelector('.payment_right_agree2 input[type="checkbox"]')
 
   function isEmailValid(value) {
     return EMAIL_REGEXP.test(value)
@@ -95,10 +87,85 @@ document.addEventListener("DOMContentLoaded", () => {
         paymentAgree2.style.outline = ''
       }, 500)
     } else {
-      paymentPopup.style.display = 'flex';
-      paymentPopup.scrollIntoView()
-      paymentPopupFormInput.value = paymentEmail.value
-      console.log(paymentPopupFormInput)
+      pay()
     }
   })
 })
+
+
+this.pay = function () {
+  var widget = new cp.CloudPayments();
+  var receiptStart = {
+    Items: [//товарные позиции
+      {
+        label: 'Индивидуальный план кето-диеты от KETO-DAY на первую неделю', //наименование товара
+        price: 28.00, //цена
+        quantity: 1.00, //количество
+        amount: 28.00, //сумма
+        vat: 20, //ставка НДС
+        method: 0, // тег-1214 признак способа расчета - признак способа расчета
+        object: 0, // тег-1212 признак предмета расчета - признак предмета товара, работы, услуги, платежа, выплаты, иного предмета расчета
+      }
+    ],
+    // taxationSystem: 0, //система налогообложения; необязательный, если у вас одна система налогообложения
+    email: paymentEmail.value, //e-mail покупателя, если нужно отправить письмо с чеком
+    isBso: false, //чек является бланком строгой отчетности
+    amounts:
+    {
+      electronic: 28.00, // Сумма оплаты электронными деньгами
+      advancePayment: 0.00, // Сумма из предоплаты (зачетом аванса) (2 знака после запятой)
+      credit: 0.00, // Сумма постоплатой(в кредит) (2 знака после запятой)
+      provision: 0.00 // Сумма оплаты встречным предоставлением (сертификаты, др. мат.ценности) (2 знака после запятой)
+    }
+  };
+  var receiptRecurrent = {
+    Items: [//товарные позиции
+      {
+        label: 'Индивидуальный план кето-диеты от KETO-DAY', //наименование товара
+        price: 899.00, //цена
+        quantity: 1.00, //количество
+        amount: 899.00, //сумма
+        vat: 20, //ставка НДС
+        method: 0, // тег-1214 признак способа расчета - признак способа расчета
+        object: 0, // тег-1212 признак предмета расчета - признак предмета товара, работы, услуги, платежа, выплаты, иного предмета расчета
+      }
+    ],
+    // taxationSystem: 0, //система налогообложения; необязательный, если у вас одна система налогообложения
+    email: paymentEmail.value, //e-mail покупателя, если нужно отправить письмо с чеком
+    isBso: false, //чек является бланком строгой отчетности
+    amounts:
+    {
+      electronic: 899.00, // Сумма оплаты электронными деньгами
+      advancePayment: 0.00, // Сумма из предоплаты (зачетом аванса) (2 знака после запятой)
+      credit: 0.00, // Сумма постоплатой(в кредит) (2 знака после запятой)
+      provision: 0.00 // Сумма оплаты встречным предоставлением (сертификаты, др. мат.ценности) (2 знака после запятой)
+    }
+  };
+
+  var data = {};
+  data.CloudPayments = {
+    CustomerReceipt: receiptStart, //чек для первого платежа
+    recurrent: {
+      interval: 'Month',
+      period: 1,
+      MaxPeriods: 25,
+      amount: 899.00,
+      customerReceipt: receiptRecurrent //чек для регулярных платежей
+    }
+  }; //создание ежемесячной подписки
+
+  widget.charge({ // options
+    publicId: 'test_api_00000000000000000000001', //id из личного кабинета
+    description: 'Подписка на получение индивидуального плана кето-диеты от KETO-DAY', //назначение
+    amount: 28.00, //сумма
+    currency: 'RUB', //валюта
+    accountId: paymentEmail.value, //идентификатор плательщика (обязательно для создания подписки)
+    data: data
+  },
+    function (options) { // success
+      //действие при успешной оплате
+    },
+    function (reason, options) { // fail
+      //действие при неуспешной оплате
+    });
+};
