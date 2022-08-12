@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     paymentRight.scrollIntoView()
   })
 
-  // Меняем ихображение закрытия
+  // Меняем изображение закрытия
   if (window.innerWidth <= 480) {
     closeButton.remove()
     closeButton.src = '/img/close_orange.png'
@@ -38,10 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Валидация
   const paymentEmail = document.querySelector('.payment_right_input-contain input'),
-    paymentAgree = document.querySelector('.payment_right_agree'),
+    paymentAgree1 = document.querySelector('.payment_right_agree1'),
+    paymentAgree2 = document.querySelector('.payment_right_agree2'),
     EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu,
     paymentButton = document.querySelector('.payment_right_button'),
-    paymentAgreeCheckbox = document.querySelector('input[type="checkbox"]'),
+    paymentAgree1Checkbox = document.querySelector('.payment_right_agree1 input[type="checkbox"]'),
+    paymentAgree2Checkbox = document.querySelector('.payment_right_agree2 input[type="checkbox"]'),
     paymentPopupFormInput = document.querySelector('.payment_popup_form_card-number_input[placeholder="ivanov_ivan@mail.ru"]')
 
   function isEmailValid(value) {
@@ -56,33 +58,42 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         paymentEmail.style.border = '3px solid #585858'
         e.target.value = ''
-      }, 1000)
+      }, 10)
     }
   })
 
   paymentButton.addEventListener('click', () => {
-    if (!paymentEmail.value && !paymentAgreeCheckbox.checked) {
+    if (!paymentEmail.value && !paymentAgree1Checkbox.checked && !paymentAgree2Checkbox.checked) {
       paymentEmail.style.border = '3px solid red'
       setTimeout(() => {
         paymentEmail.style.border = '3px solid #585858'
         paymentEmail.value = ''
-      }, 1000)
+      }, 500)
 
-      paymentAgree.style.outline = '1px solid red'
+      paymentAgree1.style.outline = '1px solid red'
       setTimeout(() => {
-        paymentAgree.style.outline = ''
-      }, 1000)
+        paymentAgree1.style.outline = ''
+      }, 500)
+      paymentAgree2.style.outline = '1px solid red'
+      setTimeout(() => {
+        paymentAgree2.style.outline = ''
+      }, 500)
     } else if (!paymentEmail.value) {
       paymentEmail.style.border = '3px solid red'
       setTimeout(() => {
         paymentEmail.style.border = '3px solid #585858'
         e.target.value = ''
-      }, 1000)
-    } else if (!paymentAgreeCheckbox.checked) {
-      paymentAgree.style.outline = '1px solid red'
+      }, 500)
+    } else if (!paymentAgree1Checkbox.checked) {
+      paymentAgree1.style.outline = '1px solid red'
       setTimeout(() => {
-        paymentAgree.style.outline = ''
-      }, 1000)
+        paymentAgree1.style.outline = ''
+      }, 500)
+    } else if (!paymentAgree2Checkbox.checked) {
+      paymentAgree2.style.outline = '1px solid red'
+      setTimeout(() => {
+        paymentAgree2.style.outline = ''
+      }, 500)
     } else {
       paymentPopup.style.display = 'flex';
       paymentPopup.scrollIntoView()
@@ -90,6 +101,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(paymentPopupFormInput)
     }
   })
-
-
 })

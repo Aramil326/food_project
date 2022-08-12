@@ -16,12 +16,13 @@
   <link rel="shortcut icon" href="favicon.svg" type="image/svg">
 
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="css/reset.css">
 
   <!-- Стили секций -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/about-us.css">
+  <link rel="stylesheet" href="css/tarifs.css">
 
   <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,9 +31,7 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-  <title>Контакты</title>
+  <title>О нас</title>
 </head>
 
 <body>
@@ -44,10 +43,10 @@
       </a>
       <li><a href="index.html">Главная</a></li>
       <li><a href="about.html">О нас</a></li>
-      <li><a href="contact.html" class="header_nav_active">Контакты</a></li>
+      <li><a href="contact.html">Контакты</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="docs/публичная-оферта.docx">Публичная оферта</a></li>
-      <li><a href="tarifs.html">Тарифы</a></li>
+      <li><a href="tarifs.html" class="header_nav_active">Тарифы</a></li>
     </ul>
     <a href="contact.html" class="header_contact-us">
       Связаться с нами
@@ -56,43 +55,35 @@
       <img src="img/header_hamburger.webp" alt="menu">
     </a>
   </header>
-  <section class="contact">
-    <h1>Контакты</h1>
-    <div class="contact_form">
-      <form action="send.php" method="post">
-        <p class="contact_form_title">
-          Ваш e-mail
-        </p>
-        <input type="e-mail" name="email" class="contact_form_input" placeholder="ivan_ivanov@mail.ru" required>
-
-        <p class="contact_form_title">
-          Тема вашего обращения
-        </p>
-        <input type="text" name="title" class="contact_form_input" required>
-
-        <p class="contact_form_title">
-          Ваше обращение
-        </p>
-        <textarea type="text" name="message" class="contact_form_input_message" required></textarea>
-
-        <div class="contact_form_checkbox">
-          <input type="checkbox" id="contact_form" checked="checked" required>
-          <label for="contact_form">
-            <p>Направляя сообщение через форму на этой странице, я ознакомился и безоговорочно соглашаюсь с <a
-                href="docs/положение-об-обработке-персональных-данных.docx">положением об обработке персональных
-                данных</a> и даю <a href="docs/consent-to-the-processing-of-personal-data.docx">согласие</a> на
-              обработку персональных
-              данных.
-            </p>
-          </label>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6Lcf4SohAAAAALIRLpKs9st4dQ9rHcRX2o3W_MhX"></div>
-        <button type="submit" class="contact_form_button">Отправить
-        </button>
-      </form>
+  <section class="about-us">
+    <h1>Тарифы</h1>
+    <div class="about-us_content">
+      <p>Пожалуйста, ознакомьтесь с действующим тарифным планом сервиса по разработке индивидуальной кето диеты.</p>
+      <p>Стоимость услуги составляет 1 (один) рубль (разовый платёж) плюс 28 (Двадцать восемь) рублей за получение
+        начального плана питания. В дальнейшем за каждые 7 суток использования сервиса взимается комиссия сервиса в
+        размере 899 (Восемьсот девяносто девять) рублей автоматически за последующие части Вашей диеты. В курс входят
+        всего 25 курсов диеты: 4 недели плана питания кето-диеты, 5 - кето-десерты, 6 - кето-напитки, 7 - кето-закуски,
+        8 - кето-выпечка, 9 - кето-смузи, 10 - безглютеновые рецепты, 11 - безлактозная диета, 12 - дополнительные
+        рецепты вегетарианского меню, 13 - кето-чаи, 14 - ограничивающая кето диета, 15 - белковая кето диета, 16 -
+        целевая кето диета, 17 - циклическая кето диета, 18 - кето при диабете, 19 - кето для веганов, 20 - кето для
+        сыроедов, 21 - праздничное кето меню, 22 - кето меню на 1000 ккал в сутки, 23 - кето меню на 1400 ккал в сутки,
+        кето меню на 1800 ккал в сутки, 25 - кето меню на 2000 ккал в сутки</p>
+      <p>В случае невозможности списания всей суммы возможно частичное списание.</p>
+      <p>Отменить или восстановить подписку
+        Если услуга перестала быть актуальна для Вас (Вы передумали получать следующие недели диеты), Вы можете
+        самостоятельно отписаться от услуги в любой момент, написав письмо на электронную почту ketotoday@yandex.ru
+        или воспользоваться страницей <a class="tarifs-link" href="subscriptions.html">отписки.</a></p>
+      <p>Безопасность платежей
+        <br>
+        Безопасность платежей осуществляется с помощью БАНКА-ЭКВАЙЕРА, функционирующего на основе современных протоколов
+        и технологий, разработанных международными платежными системами VISA International и MasterCard International
+        (3D Secure, USAF) Безопасность передаваемой информации обеспечивается с помощью современных протоколов
+        безопасности в Интернет (SSL/TLS) Передача полученных конфиденциальных данных Держателя карты (реквизиты карты,
+        регистрационные данные и т.д.) осуществляются по закрытым сетям передачи данных, сертифицированным
+        международными стандартами банковской безопасности PSI DSS 1 уровня.
+      </p>
+      <p>Все ваши данные надежно защищены.</p>
     </div>
-
-
   </section>
 
   <footer>
@@ -121,10 +112,10 @@
     <ul class="footer_nav">
       <li><a href="index.html">Главная</a></li>
       <li><a href="about.html">О нас</a></li>
-      <li><a href="contact.html" class="footer_nav_active">Контакты</a></li>
+      <li><a href="contact.html">Контакты</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="docs/публичная-оферта.docx">Публичная оферта</a></li>
-      <li><a href="tarifs.html">Тарифы</a></li>
+      <li><a href="tarifs.html" class="footer_nav_active">Тарифы</a></li>
       <li><a href="subscriptions.html">Отменить подписку</a></li>
       <li><a href="docs/положение-об-обработке-персональных-данных.docx">Положение об обработке персональных
           данных</a></li>
@@ -135,7 +126,6 @@
     </ul>
   </footer>
   <script src="js/hamburger.js"></script>
-  <script src="js/contact.js"></script>
 
   <!-- Yandex.Metrika counter -->
   <script>
