@@ -163,7 +163,23 @@ document.addEventListener("DOMContentLoaded", () => {
       data: data
     },
       function (options) { // success
-        //действие при успешной оплате
+        var now = new Date()
+        $.ajax({
+          url: 'https://keto-day.ru/php/postData.php',
+          type: 'POST',
+          dataType: 'json',
+          data: {
+            func: 'func_data',
+            id: paymentEmail.value,
+            paymentDate: `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`,
+          },
+          success: function (data) {
+            console.log('Запрос ушел')
+          },
+          error: function () {
+            console.log('Запрос не ушел')
+          }
+        })
       },
       function (reason, options) { // fail
         //действие при неуспешной оплате
