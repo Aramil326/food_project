@@ -16,7 +16,6 @@ function articles_get($link, $id_article)
 function articles_new($link, $userId, $paymentDate)
 {
   $userId = trim($userId);
-  $paymentDate = trim($paymentDate);
 
   if ($userId == '')
     return false;
@@ -30,6 +29,7 @@ function articles_new($link, $userId, $paymentDate)
     mysqli_real_escape_string($link, $paymentDate)
   );
 
+  echo $query;
   $result = mysqli_query($link, $query);
 
   if (!$result)

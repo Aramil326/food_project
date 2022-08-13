@@ -166,12 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
         var now = new Date()
         let id = paymentEmail.value
         $.ajax({
-          url: 'https://keto-day.ru/php/postData.php',
+          url: '../php/postData.php',
           type: 'POST',
           data: id,
           success: function (data) {
             console.log('Запрос ушел')
-            console.log(data)
+            console.dir(data)
           },
           error: function () {
             console.log('Запрос не ушел')
