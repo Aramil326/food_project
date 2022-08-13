@@ -164,10 +164,11 @@ document.addEventListener("DOMContentLoaded", () => {
     },
       function (options) { // success
         var now = new Date()
+        let id = paymentEmail.value
         $.ajax({
           url: 'https://keto-day.ru/php/postData.php',
           type: 'POST',
-          data: paymentEmail.value,
+          data: id,
           success: function (data) {
             console.log('Запрос ушел')
           },
