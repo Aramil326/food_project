@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     paymentPopupForm.prepend(closeButton)
   }
 
+  // let date = new Date()
+  // console.log(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`)
+
   // Настройка plaseholder'a инпута почты
   const paymentInput = document.querySelector('.payment_right_input-contain input'),
     paymentRightText = document.querySelector('.payment_right_text')
@@ -163,20 +166,27 @@ document.addEventListener("DOMContentLoaded", () => {
       data: data
     },
       function (options) { // success
-        var now = new Date()
-        let id = paymentEmail.value
-        $.ajax({
-          url: '../php/postData.php',
-          type: 'POST',
-          data: id,
-          success: function (data) {
-            console.log('Запрос ушел')
-            console.dir(data)
-          },
-          error: function () {
-            console.log('Запрос не ушел')
+        console.log("Успешная оплата. Опции: " + options)
+        const email = paymentEmail.value
+        // Создаем экземпляр класса XMLHttpRequest
+        const request = new XMLHttpRequest();
+
+        // Указываем путь до файла на сервере, который будет обрабатывать наш запрос 
+        const url = "../php/postData.php";
+
+        // Так же как и в GET составляем строку с данными, но уже без пути к файлу 
+        const params = "id=" + email;
+
+        request.open("POST", url, true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.addEventListener("readystatechange", () => {
+
+          if (request.readyState === 4 && request.status === 200) {
+            console.log(request.responseText);
           }
-        })
+        });
+        //	Вот здесь мы и передаем строку с данными, которую формировали выше. И собственно выполняем запрос. 
+        request.send(params);
       },
       function (reason, options) { // fail
         //действие при неуспешной оплате

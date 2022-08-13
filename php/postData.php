@@ -3,11 +3,9 @@
 // require_once("../php/articles.php");
 
 // Устанавливаем подключение к бд
-// define('MYSQL_SERVER', 'u1736914_default');
 define('MYSQL_SERVER', 'localhost');
 define('MYSQL_USER', 'u1736914_default');
 define('MYSQL_PASSWORD', 'wyD2vBV5K49PprPG');
-// define('MYSQL_PASSWORD', '');
 define('MYSQL_DB', 'u1736914_default');
 
 function db_connect()
@@ -22,7 +20,7 @@ function db_connect()
 }
 
 // Функция занесения пользователя в бд
-function articles_new($link, $userId, $paymentDate)
+function articles_new($link, $userId)
 {
   $userId = trim($userId);
 
@@ -31,10 +29,11 @@ function articles_new($link, $userId, $paymentDate)
 
   $t = "INSERT INTO users (id, paymentDate) VALUES ('%s', '%s')";
 
+  $today = date("Y-m-d");
   $query = sprintf(
     $t,
     mysqli_real_escape_string($link, $userId),
-    mysqli_real_escape_string($link, $paymentDate)
+    mysqli_real_escape_string($link, $today)
   );
 
   echo $query;
@@ -48,9 +47,8 @@ function articles_new($link, $userId, $paymentDate)
 
 // Забираем айдишник пользователя
 $id = $_POST['id'];
-
 // создаем соединение
 $link = db_connect();
 
 // Заносим пользователя в бд
-articles_new($link, $id, '2022-08-13');
+articles_new($link, $id);
