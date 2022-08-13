@@ -557,7 +557,7 @@ function analysis() {
       if (timePassed > 2500) {
         clearInterval(timer)
         checkpoint.style.transform = `rotate(0deg)`;
-        checkpoint.src = 'img/check.png'
+        checkpoint.src = 'img/check.webp'
       }
     }, 20);
   }
@@ -588,23 +588,23 @@ function resumeUpdate() {
   imt.textContent = (currentWeight / (height * height)).toFixed(2)
 
   if (imt.textContent < 18.5) {
-    imtImg.src = 'img/scale-1.png'
+    imtImg.src = 'img/scale-1.webp'
     imtSubtitle.textContent = 'Недостаточная масса тела'
     metabolicAge = age - 5
   } else if (imt.textContent > 18.5 && imt.textContent < 25) {
-    imtImg.src = 'img/scale-2.png'
+    imtImg.src = 'img/scale-2.webp'
     imtSubtitle.textContent = 'Нормальная масса тела'
     metabolicAge = age
   } else if (imt.textContent > 25 && imt.textContent < 30) {
-    imtImg.src = 'img/scale-3.png'
+    imtImg.src = 'img/scale-3.webp'
     imtSubtitle.textContent = 'Избыточная масса тела'
     metabolicAge = age + 5
   } else if (imt.textContent > 30 && imt.textContent < 35) {
-    imtImg.src = 'img/scale-4.png'
+    imtImg.src = 'img/scale-4.webp'
     imtSubtitle.textContent = 'Ожирение 1-ой степени'
     metabolicAge = age + 10
   } else if (imt.textContent > 35) {
-    imtImg.src = 'img/scale-5.png'
+    imtImg.src = 'img/scale-5.webp'
     imtSubtitle.textContent = 'Ожирение'
     metabolicAge = age + 15
   }
@@ -623,19 +623,19 @@ function resumeUpdate() {
 
   if (sex === 'man') {
     if (metabolicAge < 18) {
-      metabolicAgeImg.src = 'img/resume-boys-1.png'
+      metabolicAgeImg.src = 'img/resume-boys-1.webp'
     } else if (metabolicAge > 18 || metabolicAge < 50) {
-      metabolicAgeImg.src = 'img/resume-boys-2.png'
+      metabolicAgeImg.src = 'img/resume-boys-2.webp'
     } else {
-      metabolicAgeImg.src = 'img/resume-boys-3.png'
+      metabolicAgeImg.src = 'img/resume-boys-3.webp'
     }
   } else if (sex === 'woman') {
     if (metabolicAge < 18) {
-      metabolicAgeImg.src = 'img/resume-girls-1.png'
+      metabolicAgeImg.src = 'img/resume-girls-1.webp'
     } else if (metabolicAge > 18 || metabolicAge < 50) {
-      metabolicAgeImg.src = 'img/resume-girls-2.png'
+      metabolicAgeImg.src = 'img/resume-girls-2.webp'
     } else {
-      metabolicAgeImg.src = 'img/resume-girls-3.png'
+      metabolicAgeImg.src = 'img/resume-girls-3.webp'
     }
   }
 
