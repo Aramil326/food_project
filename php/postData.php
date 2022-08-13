@@ -2,7 +2,7 @@
 require_once("https://keto-day.ru/php/database.php");
 require_once("https://keto-day.ru/php/articles.php");
 
-$id = $POST['paymentEmail.value'];
+$id = $POST['id'];
 
 $link = db_connect();
 
