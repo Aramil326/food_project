@@ -4,7 +4,7 @@ define('MYSQL_SERVER', 'localhost');
 define('MYSQL_USER', 'u1736914_default');
 define('MYSQL_PASSWORD', 'wyD2vBV5K49PprPG');
 // define('MYSQL_PASSWORD', '');
-define('MYSQL_DB', 'users');
+define('MYSQL_DB', 'u1736914_default');
 
 function db_connect()
 {

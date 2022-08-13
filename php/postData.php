@@ -1,6 +1,6 @@
 <?php
-require_once("https://keto-day.ru/php/database.php");
-require_once("https://keto-day.ru/php/articles.php");
+require_once("../php/database.php");
+require_once("../php/articles.php");
 
 $id = $POST['id'];
 

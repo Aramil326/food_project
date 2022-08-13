@@ -171,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data: id,
           success: function (data) {
             console.log('Запрос ушел')
+            console.log(data)
           },
           error: function () {
             console.log('Запрос не ушел')
