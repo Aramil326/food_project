@@ -1,12 +1,12 @@
 <?php
-require_once("database.php");
-require_once("articles.php");
-$id = $_POST['id'];
-$paymentDate = $_POST['paymentDate'];
+require_once("https://keto-day.ru/php/database.php");
+require_once("https://keto-day.ru/php/articles.php");
+
+$id = $POST['paymentEmail.value'];
 
 $link = db_connect();
 
 // ЗАНОСИМ ПОЛЬЗОВАТЕЛЯ В БД
 if (true) {
-  articles_new($link, $id, $paymentDate);
+  articles_new($link, $id, '2022-08-13');
 }

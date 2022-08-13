@@ -167,12 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
         $.ajax({
           url: 'https://keto-day.ru/php/postData.php',
           type: 'POST',
-          dataType: 'json',
-          data: {
-            func: 'func_data',
-            id: paymentEmail.value,
-            paymentDate: `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`,
-          },
+          data: paymentEmail.value,
           success: function (data) {
             console.log('Запрос ушел')
           },
