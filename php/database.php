@@ -1,7 +1,7 @@
 <?php
-define('MYSQL_SERVER', 'u1736914_default');
-// define('MYSQL_SERVER', 'localhost');
-define('MYSQL_USER', 'root');
+// define('MYSQL_SERVER', 'u1736914_default');
+define('MYSQL_SERVER', 'localhost');
+define('MYSQL_USER', 'u1736914_default');
 define('MYSQL_PASSWORD', 'wyD2vBV5K49PprPG');
 // define('MYSQL_PASSWORD', '');
 define('MYSQL_DB', 'users');
