@@ -20,19 +20,20 @@ function db_connect()
 }
 
 // Функция занесения пользователя в бд
-function articles_new($link, $userId)
+function articles_new($link, $userEmail)
 {
-  $userId = trim($userId);
+  $userEmail = trim($userEmail);
 
-  if ($userId == '')
+  if ($userEmail == '')
     return false;
 
-  $t = "INSERT INTO users (id, paymentDate) VALUES ('%s', '%s')";
+  $t = "INSERT INTO users (email, paymentDate) VALUES ('%s', '%s')";
 
   $today = date("Y-m-d");
+  $today = '2022-08-15';
   $query = sprintf(
     $t,
-    mysqli_real_escape_string($link, $userId),
+    mysqli_real_escape_string($link, $userEmail),
     mysqli_real_escape_string($link, $today)
   );
 
@@ -46,9 +47,9 @@ function articles_new($link, $userId)
 }
 
 // Забираем айдишник пользователя
-$id = $_POST['id'];
+$email = $_POST['email'];
 // создаем соединение
 $link = db_connect();
 
 // Заносим пользователя в бд
-articles_new($link, $id);
+articles_new($link, $email);
