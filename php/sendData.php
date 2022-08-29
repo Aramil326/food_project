@@ -49,23 +49,29 @@ function articles_send($link)
       $paymentDate = $row["paymentDate"];
 
       $today = date("Y-m-d");
-      $today = '2022-08-22';
 
       $date_diff = abs(strtotime($today) - strtotime($paymentDate));
       $days_passed = floor($date_diff / 86400);
 
-      for ($i = 7; $i <= 175; $i = $i + 7) {
-        if ($days_passed == $i && !$row["mail_" . $i / 7]) {
-          $mail_ = "mail_" . $i / 7;
-          $fid = 'ID: ' . $id . ' <br />';
-          $fName = 'Почта: ' . $email . ' <br />';
-          $fpaymentDate = 'День платежа: ' . $paymentDate . ' <br />';
-          $ftoday = 'Сегодня: ' . $today . ' <br />';
-          $fpaymentDateDiff = 'Разница между датой платежа и сегодняшней датой: ' . $days_passed . ' дней. ' . ' <br />';
-          $fmail_ = 'mail_: ' . $mail_ . ' <br />';
-          $AllInOne = $fid . $fName . $fpaymentDate . $ftoday . $fpaymentDateDiff . $fmail_;
+      for ($i = 0; $i <= 175; $i = $i + 7) {
+        if ($i == 0) {
+          $bodyOfMail = "Ваш план на следующую неделю можно скачать, перейдя по этой ссылке: https://keto-day.ru/plans/week-1.pdf";
+          $mail_ = "mail_1";
+        } else {
+          $bodyOfMail = "Ваш план на следующую неделю можно скачать, перейдя по этой ссылке: https://keto-day.ru/plans/week-" . ($i / 7 + 1) . ".pdf";
+          $mail_ = "mail_" . ($i / 7 + 1);
+        }
+        if ($days_passed == $i && !$row[$mail_]) {
 
-          $to = 'aramil28022005@gmail.com';
+          // $fid = 'ID: ' . $id . ' <br />';
+          // $fName = 'Почта: ' . $email . ' <br />';
+          // $fpaymentDate = 'День платежа: ' . $paymentDate . ' <br />';
+          // $ftoday = 'Сегодня: ' . $today . ' <br />';
+          // $fpaymentDateDiff = 'Разница между датой платежа и сегодняшней датой: ' . $days_passed . ' дней. ' . ' <br />';
+          // $fmail_ = 'mail_: ' . $mail_ . ' <br />';
+          $AllInOne = $bodyOfMail;
+
+          $to = $email;
           $headers = "From:KETO-DAY <ketotoday@yandex.ru>\nReply-to:aramil28022005@gmail.com\nContent-Type: text/html; charset=\"utf-8\"\n";
           mail($to, 'План диеты', $AllInOne, $headers);
 
