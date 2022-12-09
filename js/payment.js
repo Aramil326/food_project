@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       recurrent: {
         interval: 'Week',
         period: 1,
-        MaxPeriods: 13,
+        MaxPeriods: 25,
         amount: 899.00,
         customerReceipt: receiptRecurrent //чек для регулярных платежей
       }

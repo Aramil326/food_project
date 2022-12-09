@@ -30,7 +30,6 @@ function articles_new($link, $userEmail)
   $t = "INSERT INTO users (email, paymentDate) VALUES ('%s', '%s')";
 
   $today = date("Y-m-d");
-  $today = '2022-08-15';
   $query = sprintf(
     $t,
     mysqli_real_escape_string($link, $userEmail),

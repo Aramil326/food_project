@@ -2,7 +2,7 @@
     padding: 100px 130px;
     font-family: 'Montserrat';
     font-style: normal;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(../img/resume_bg.png);
+    background-image: url(../img/resume_bg.webp);
     background-repeat: no-repeat;
     background-position-x: -1px;
   }
